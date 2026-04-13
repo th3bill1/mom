@@ -1,0 +1,380 @@
+{
+  "days": [
+    {
+      "label": "Środa",
+      "slots": [
+        {
+          "start": "08:00",
+          "title": "Wyjazd spod II LO, Park Leśny",
+          "type": "other",
+          "groups": [ "wszyscy" ],
+          "duration": 60
+        },
+        {
+          "start": "10:15",
+          "title": "Oficjalne przywitanie",
+          "type": "other",
+          "groups": [ "wszyscy" ],
+          "duration": 15
+        },
+        {
+          "start": "10:30",
+          "duration": 210,
+          "title": "Kontest 1",
+          "type": "contest",
+          "groups": [ "młodsza", "starsza", "elita" ]
+        },
+        {
+          "start": "14:00",
+          "title": "Obiad",
+          "type": "meal",
+          "location": "Stołówka",
+          "groups": [ "wszyscy" ],
+          "duration":  45
+        },
+        {
+          "start": "14:45",
+          "title": "Czas wolny",
+          "type": "free_time",
+          "groups": [ "wszyscy" ],
+          "notes": "Długość zależna od grupy",
+          "duration": 90
+        },
+        {
+          "start": "16:20",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": [ "elita" ],
+          "location": "Świetlica",
+          "duration": 45
+        },
+        {
+          "start": "16:20",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": [ "młodsza" ],
+          "duration": 30
+        },
+        {
+          "start": "17:00",
+          "duration": 90,
+          "title": "Wykład: Wzory skróconego mnożenia",
+          "type": "lecture",
+          "groups": [ "młodsza" ]
+        },
+        {
+          "start": "17:00",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": [ "starsza" ],
+          "location": "Świetlica",
+          "duration": 30
+        },
+        {
+          "start": "17:30",
+          "title": "Warsztaty z lingwistyki",
+          "type": "workshop",
+          "notes": "Dla chętnych",
+          "groups": [ "starsza", "elita" ],
+          "location": "Świetlica",
+          "duration": 60
+        },
+        {
+          "start": "18:45",
+          "title": "Kolacja",
+          "type": "meal",
+          "groups": [ "wszyscy" ],
+          "duration": 60
+        },
+        {
+          "start": "19:30",
+          "title": "Wykład: Zasada minimum i maksimum",
+          "type": "lecture",
+          "groups": [ "starsza", "elita" ],
+          "duration": 90
+        },
+        {
+          "start": "19:30",
+          "title": "Warsztaty z lingwistyki",
+          "type": "workshop",
+          "notes": "Dla chętnych",
+          "groups": [ "młodsza" ],
+          "location": "Świetlica",
+          "duration": 60
+        },
+        {
+          "start": "21:00",
+          "title": "Wykład: Podobieństwo spiralne",
+          "type": "lecture",
+          "groups": [ "elita" ],
+          "duration": 90
+        }
+      ]
+    },
+    {
+      "label": "Czwartek",
+      "slots": [
+        {
+          "start": "08:00",
+          "title": "Śniadanie",
+          "type": "meal",
+          "location": "Stołówka",
+          "groups": [ "wszyscy" ],
+          "duration": 45
+        },
+        {
+          "start": "09:00",
+          "title": "Kontest 2",
+          "type": "contest",
+          "groups": [ "młodsza", "starsza", "elita" ],
+          "duration": 240
+        },
+        {
+          "title": "Czas wolny",
+          "type": "free_time",
+          "groups": [ "wszyscy" ],
+          "start": "13:00",
+          "duration": 60
+        },
+        {
+          "start": "14:00",
+          "title": "Obiad",
+          "type": "meal",
+          "location": "Stołówka",
+          "groups": [ "wszyscy" ],
+          "duration": 45
+        },
+        {
+          "title": "Czas wolny",
+          "start": "14:45",
+          "type": "free_time",
+          "groups": [ "wszyscy" ],
+          "duration": 75,
+          "notes": "Długość zależna od grupy"
+        },
+        {
+          "start": "16:00",
+          "title": "Wykład: Okrąg wpisany i opisany",
+          "type": "lecture",
+          "location": "Świetlica",
+          "groups": [ "młodsza" ],
+          "duration": 90
+        },
+        {
+          "start": "16:00",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": [ "starsza" ],
+          "location": "Sala 23",
+          "duration": 40
+        },
+        {
+          "start": "16:40",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": [ "elita" ],
+          "location": "Sala 23",
+          "duration": 45
+        },
+        {
+          "start": "17:30",
+          "title": "Wykład: Równania diofantyczne",
+          "type": "lecture",
+          "location": "Świetlica",
+          "groups": [ "starsza", "elita" ],
+          "duration": 90
+        },
+        {
+          "start": "17:30",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": [ "młodsza" ],
+          "location": "Sala 23",
+          "duration": 30
+        },
+        {
+          "start": "19:00",
+          "title": "Kolacja – ognisko",
+          "type": "meal",
+          "groups": [ "wszyscy" ],
+          "approx": true,
+          "notes": "Ognisko zależne od pogody",
+          "location": "Na zewnątrz",
+          "duration": 90
+        },
+        {
+          "title": "Warsztaty: modulo",
+          "type": "workshop",
+          "groups": [ "młodsza", "starsza", "elita" ],
+          "notes": "Po ognisku",
+          "location": "Świetlica",
+          "start": "20:30",
+          "duration": 90
+        }
+      ]
+    },
+    {
+      "label": "Piątek",
+      "slots": [
+        {
+          "start": "08:00",
+          "title": "Śniadanie",
+          "type": "meal",
+          "location": "Stołówka",
+          "groups": [ "wszyscy" ],
+          "duration": 45
+        },
+        {
+          "start": "09:00",
+          "title": "Kontest 3",
+          "type": "contest",
+          "groups": [ "młodsza", "starsza", "elita" ],
+          "duration": 240
+        },
+        {
+          "title": "Czas wolny",
+          "type": "free_time",
+          "groups": [ "wszyscy" ],
+          "start": "13:00",
+          "duration": 60
+        },
+        {
+          "start": "14:15",
+          "title": "Obiad",
+          "type": "meal",
+          "location": "Stołówka",
+          "groups": [ "wszyscy" ],
+          "duration": 30
+        },
+        {
+          "title": "Czas wolny",
+          "type": "free_time",
+          "groups": [ "wszyscy" ],
+          "start": "14:45",
+          "notes": "Długość zależna od grupy",
+          "duration": 30
+        },
+        {
+          "start": "15:45",
+          "title": "Wykład: Kolorowanie",
+          "type": "lecture",
+          "groups": [ "młodsza" ],
+          "location": "Świetlica",
+          "duration": 90
+        },
+        {
+          "start": "15:15",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "location": "Sala 23",
+          "groups": [ "starsza" ],
+          "duration": 45
+        },
+        {
+          "start": "16:00",
+          "title": "Wykład: Algebra z członkiem Komitetu Głównego OM",
+          "type": "lecture",
+          "location": "Sala 23",
+          "groups": [ "starsza", "elita" ],
+          "duration": 90
+        },
+        {
+          "title": "Wykład: Potęga punktu",
+          "type": "lecture",
+          "groups": [ "starsza" ],
+          "location": "Świetlica",
+          "notes": "Start plus/minus 15 min",
+          "start": "17:15",
+          "duration": 90
+        },
+        {
+          "start": "17:30",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "location": "Sala 23",
+          "groups": [ "elita" ],
+          "duration": 45
+        },
+        {
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": [ "młodsza" ],
+          "location": "Świetlica",
+          "start": "15:15",
+          "duration": 30
+        },
+        {
+          "start": "18:45",
+          "title": "Kolacja",
+          "type": "meal",
+          "location": "Stołówka",
+          "groups": [ "wszyscy" ],
+          "duration": 45
+        },
+        {
+          "title": "Podział na Mecz Matematyczny, rozdanie zadań i praca nad zadaniami z Meczu",
+          "type": "other",
+          "groups": [ "młodsza", "starsza", "elita" ],
+          "notes": "Czas nieograniczony",
+          "location": "Świetlica",
+          "start": "19:45",
+          "duration": 45
+        }
+      ]
+    },
+    {
+      "label": "Sobota",
+      "slots": [
+        {
+          "start": "08:00",
+          "title": "Śniadanie",
+          "type": "meal",
+          "groups": [ "wszyscy" ],
+          "duration": 45
+        },
+        {
+          "start": "09:00",
+          "title": "Mecz Matematyczny",
+          "type": "match",
+          "location": "Sala 23",
+          "groups": [ "młodsza" ],
+          "notes": "Inne grupy mogą przyjść jako publiczność",
+          "duration": 120
+        },
+        {
+          "start": "09:00",
+          "title": "Mecz Matematyczny",
+          "type": "match",
+          "groups": [ "elita" ],
+          "location": "Świetlica",
+          "notes": "Inne grupy mogą przyjść jako publiczność",
+          "duration": 120
+        },
+        {
+          "start": "11:00",
+          "title": "Mecz Matematyczny",
+          "type": "match",
+          "location": "Sala 23",
+          "groups": [ "starsza" ],
+          "notes": "Inne grupy mogą przyjść jako publiczność",
+          "duration": 120
+        },
+        {
+          "start": "13:30",
+          "title": "Zakończenie obozu, podsumowanie",
+          "type": "other",
+          "location": "Świetlica",
+          "groups": [ "wszyscy" ],
+          "duration": 30
+        },
+        {
+          "start": "14:00",
+          "title": "Wyjazd do Mielca",
+          "type": "other",
+          "groups": [ "wszyscy" ],
+          "duration": 70
+        }
+      ]
+    }
+  ]
+}

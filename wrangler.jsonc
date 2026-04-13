@@ -1,0 +1,19 @@
+{
+  "name": "karto",
+  "compatibility_date": "2026-02-19",
+  "main": "./app/worker.ts",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./build/client",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": false
+    }
+  }
+}
