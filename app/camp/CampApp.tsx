@@ -2,28 +2,13 @@ import { Routes, Route, NavLink, Link, Navigate } from "react-router";
 import "katex/dist/katex.min.css";
 import Landing from "./pages/Landing";
 import Timetable from "./pages/Timetable";
-import { Mlodsza, Starsza, Elita } from "./pages/Tasks";
 import Match from "./pages/Match";
-import Lectures, { WSM, ZMM, PS, OWIO, RD, WM, PP, KOL, WIE } from "./pages/Lectures";
 import ThemeToggle from "~/components/theme-toggle";
-import { Badge } from "~/components/ui/badge";
 import { buttonVariants } from "~/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "~/components/ui/card";
 import { Separator } from "~/components/ui/separator";
 import { cn } from "~/lib/utils";
-import TasksArchive, {
-  Mlodsza1,
-  Starsza1,
-  Elita1,
-  Mlodsza2,
-  Starsza2,
-  Elita2,
-  Mlodsza3,
-  Starsza3,
-  Elita3,
-} from "./pages/Archive";
-import MatchTasks, { MlodszaMecz, StarszaMecz, ElitaMecz } from "./pages/MatchTasks";
-import Archive from "./pages/Archive";
+import Archive, { ArchiveFileView } from "./pages/Archive";
 
 export default function CampApp() {
   const link = "px-2";
@@ -59,9 +44,10 @@ export default function CampApp() {
         <CardContent className="pt-4">
           <nav className="flex flex-wrap gap-2">
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/kalendarz">Kalendarz</NavLink>
+            <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/archiwum">Archiwum</NavLink>
             {/* <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/zadania">Zadania</NavLink>
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/wyklady">Wyklady</NavLink>
-            <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/archiwum">Archiwum</NavLink> */}
+            */}
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/mecz">Mecz Matematyczny</NavLink>
           </nav>
         </CardContent>
@@ -71,6 +57,8 @@ export default function CampApp() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/kalendarz" element={<Timetable />} />
+          <Route path="/archiwum" element={<Archive />} />
+          <Route path="/archiwum/:campId/:category/:fileSlug" element={<ArchiveFileView />} />
           <Route path="/mecz" element={<Match />} />
           {/* <Route path="/zadania" element={<TasksArchive />} />
           <Route path="/zadania/mlodsza" element={<Mlodsza />} />
@@ -86,16 +74,6 @@ export default function CampApp() {
           <Route path="/wyklady/kol" element={<KOL />} />
           <Route path="/wyklady/pp" element={<PP />} />
           <Route path="/wyklady/wie" element={<WIE />} />
-          <Route path="/archiwum" element={<Archive/>} />
-          <Route path="/archiwum/mlodsza1" element={<Mlodsza1 />} />
-          <Route path="/archiwum/starsza1" element={<Starsza1 />} />
-          <Route path="/archiwum/elita1" element={<Elita1 />} />
-          <Route path="/archiwum/mlodsza2" element={<Mlodsza2 />} />
-          <Route path="/archiwum/starsza2" element={<Starsza2 />} />
-          <Route path="/archiwum/elita2" element={<Elita2 />} />
-          <Route path="/archiwum/mlodsza3" element={<Mlodsza3 />} />
-          <Route path="/archiwum/starsza3" element={<Starsza3 />} />
-          <Route path="/archiwum/elita3" element={<Elita3 />} />
           <Route path="/mecz/zadania" element={<MatchTasks />} />
           <Route path="/mecz/mlodsza" element={<MlodszaMecz />} />
           <Route path="/mecz/starsza" element={<StarszaMecz />} />

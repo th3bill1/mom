@@ -7,17 +7,17 @@ export default function Info() {
 
       <ul className="list-disc list-inside space-y-2 text-muted-foreground">
         <li>
-          Start lub kontynuacja Waszej przygody z matematyką olimpijską – dla
+          Start lub kontynuacja Waszej przygody z matematyką olimpijską - dla
           tych, którzy celują wyżej!
         </li>
         <li>
           Kontesty zadaniowe i wykłady na różnych poziomach, dopasowanych do
-          Was – trzy grupy trudności
+          Was - dwie grupy trudności.
         </li>
-        <li>Warsztaty lingwistyczne dla chętnych</li>
+        <li>Dodatkowe zajęcia dla chętnych - warsztaty lingwistyczne i warsztaty z geometrii</li>
         <li>
           Kadra studentów nauk ścisłych, laureatów wielu konkursów
-          matematycznych, olimpijczyków OM, w tym zeszłorocznej finalistki
+          matematycznych, olimpijczyków OM.
         </li>
         <li>
           Okazja na zbudowanie więzi z innymi entuzjastami matematyki w Waszej

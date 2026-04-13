@@ -1,0 +1,319 @@
+{
+  "camps": [
+    {
+      "id": "mom1",
+      "title": "MOM I",
+      "sections": [
+        {
+          "name": "Kontesty",
+          "path": "kontesty",
+          "files": [
+            {
+              "slug": "oboz-c1-gr-mlodsza",
+              "fileName": "Obóz - C1 gr. młodsza .pdf",
+              "name": "K1 gr. młodsza .pdf"
+            },
+            {
+              "slug": "oboz-c1-gr-starsza",
+              "fileName": "Obóz - C1 gr. starsza .pdf",
+              "name": "K1 gr. starsza .pdf"
+            },
+            {
+              "slug": "oboz-c2-gr-mlodsza",
+              "fileName": "Obóz - C2 gr. młodsza .pdf",
+              "name": "K2 gr. młodsza .pdf"
+            },
+            {
+              "slug": "oboz-c2-gr-starsza",
+              "fileName": "Obóz - C2 gr. starsza .pdf",
+              "name": "K2 gr. starsza .pdf"
+            }
+          ]
+        },
+        {
+          "name": "Mecze",
+          "path": "mecze",
+          "files": [
+            {
+              "slug": "oboz-mecz-mlodsza",
+              "fileName": "Obóz - mecz młodsza .pdf",
+              "name": "Mecz młodsza .pdf"
+            },
+            {
+              "slug": "oboz-mecz-starsza",
+              "fileName": "Obóz - mecz starsza.pdf",
+              "name": "Mecz starsza.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Wykłady",
+          "path": "wykłady",
+          "files": [
+            {
+              "slug": "oboz-kongruencje-ml",
+              "fileName": "Obóz - kongruencje (mł).pdf",
+              "name": "Kongruencje.pdf"
+            },
+            {
+              "slug": "oboz-potega-punktu-ml",
+              "fileName": "Obóz - potęga punktu (mł).pdf",
+              "name": "Potęga punktu.pdf"
+            },
+            {
+              "slug": "oboz-rownania-funkcyjne-st",
+              "fileName": "Obóz - równania funkcyjne (st).pdf",
+              "name": "Równania funkcyjne.pdf"
+            },
+            {
+              "slug": "oboz-tw-fermata-eulera-wilsona-st",
+              "fileName": "Obóz - Tw. Fermata, Eulera i Wilsona (st).pdf",
+              "name": "Tw. Fermata, Eulera i Wilsona.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mom2",
+      "title": "MOM II",
+      "sections": [
+        {
+          "name": "Kontesty",
+          "path": "kontesty",
+          "files": [
+            {
+              "slug": "ii-oboz-c1-elita",
+              "fileName": "II Obóz - C1 Elita.pdf",
+              "name": "K1 Elita.pdf"
+            },
+            {
+              "slug": "ii-oboz-c1-mlodsza",
+              "fileName": "II Obóz - C1 młodsza .pdf",
+              "name": "K1 młodsza .pdf"
+            },
+            {
+              "slug": "ii-oboz-c1-starsza",
+              "fileName": "II Obóz - C1 starsza .pdf",
+              "name": "K1 starsza .pdf"
+            },
+            {
+              "slug": "ii-oboz-c2-elita",
+              "fileName": "II Obóz - C2 Elita.pdf",
+              "name": "K2 Elita.pdf"
+            },
+            {
+              "slug": "ii-oboz-c2-mlodsza",
+              "fileName": "II Obóz - C2 młodsza .pdf",
+              "name": "K2 młodsza .pdf"
+            },
+            {
+              "slug": "ii-oboz-c2-starsza",
+              "fileName": "II Obóz - C2 starsza.pdf",
+              "name": "K2 starsza.pdf"
+            },
+            {
+              "slug": "ii-oboz-c3-mlodsza",
+              "fileName": "II Obóz - C3 młodsza .pdf",
+              "name": "K3 młodsza .pdf"
+            },
+            {
+              "slug": "ii-oboz-c3-starsza",
+              "fileName": "II Obóz - C3 starsza .pdf",
+              "name": "K3 starsza .pdf"
+            }
+          ]
+        },
+        {
+          "name": "Mecze",
+          "path": "mecze",
+          "files": [
+            {
+              "slug": "ii-oboz-mecz-elita",
+              "fileName": "II Obóz - mecz Elita.pdf",
+              "name": "Mecz Elita.pdf"
+            },
+            {
+              "slug": "ii-oboz-mecz-mlodsza",
+              "fileName": "II Obóz - mecz młodsza .pdf",
+              "name": "Mecz młodsza .pdf"
+            },
+            {
+              "slug": "ii-oboz-mecz-starsza",
+              "fileName": "II Obóz - mecz starsza.pdf",
+              "name": "Mecz starsza.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Wykłady",
+          "path": "wykłady",
+          "files": [
+            {
+              "slug": "1t-ii-oboz-wykladniki-p-adyczne",
+              "fileName": "(1 T) - II obóz - Wykładniki p-adyczne.pdf",
+              "name": "Wykładniki p-adyczne.pdf"
+            },
+            {
+              "slug": "1l-ii-oboz-wzory-skroconego-mnozenia",
+              "fileName": "(1 Ł) - II obóz - Wzory skróconego mnożenia.pdf",
+              "name": "Wzory skróconego mnożenia.pdf"
+            },
+            {
+              "slug": "2t-ii-oboz-kolorowanie-i-grafy-docx",
+              "fileName": "(2 T) - II obóz - Kolorowanie i grafy.docx.pdf",
+              "name": "Kolorowanie i grafy.docx.pdf"
+            },
+            {
+              "slug": "2l-ii-oboz-kongruencje",
+              "fileName": "(2 Ł) - II Obóz - kongruencje.pdf",
+              "name": "Kongruencje.pdf"
+            },
+            {
+              "slug": "3t-ii-oboz-symediany",
+              "fileName": "(3 T) - II obóz - Symediany.pdf",
+              "name": "Symediany.pdf"
+            },
+            {
+              "slug": "3l-ii-oboz-indukcja-matematyczna",
+              "fileName": "(3 Ł) - II obóz - Indukcja matematyczna.pdf",
+              "name": "Indukcja matematyczna.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mom3",
+      "title": "MOM III",
+      "sections": [
+        {
+          "name": "Kontesty",
+          "path": "kontesty",
+          "files": [
+            {
+              "slug": "c1-elita",
+              "fileName": "C1 Elita.pdf",
+              "name": "K1 Elita.pdf"
+            },
+            {
+              "slug": "c1-mlodsza",
+              "fileName": "C1 młodsza .pdf",
+              "name": "K1 młodsza .pdf"
+            },
+            {
+              "slug": "c1-starsza",
+              "fileName": "C1 starsza .pdf",
+              "name": "K1 starsza .pdf"
+            },
+            {
+              "slug": "c2-elita",
+              "fileName": "C2 Elita.pdf",
+              "name": "K2 Elita.pdf"
+            },
+            {
+              "slug": "c2-mlodsza",
+              "fileName": "C2 młodsza .pdf",
+              "name": "K2 młodsza .pdf"
+            },
+            {
+              "slug": "c2-starsza",
+              "fileName": "C2 starsza.pdf",
+              "name": "K2 starsza.pdf"
+            },
+            {
+              "slug": "c3-elita",
+              "fileName": "C3 Elita.pdf",
+              "name": "K3 Elita.pdf"
+            },
+            {
+              "slug": "c3-mlodsza",
+              "fileName": "C3 młodsza .pdf",
+              "name": "K3 młodsza .pdf"
+            },
+            {
+              "slug": "c3-starsza",
+              "fileName": "C3 starsza .pdf",
+              "name": "K3 starsza .pdf"
+            }
+          ]
+        },
+        {
+          "name": "Mecze",
+          "path": "mecze",
+          "files": [
+            {
+              "slug": "iii-oboz-mecz-elita",
+              "fileName": "III Obóz - mecz Elita.pdf",
+              "name": "Mecz Elita.pdf"
+            },
+            {
+              "slug": "iii-oboz-mecz-mlodsza",
+              "fileName": "III Obóz - mecz młodsza .pdf",
+              "name": "Mecz młodsza .pdf"
+            },
+            {
+              "slug": "iii-oboz-mecz-starsza",
+              "fileName": "III Obóz - mecz starsza.pdf",
+              "name": "Mecz starsza.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Wykłady",
+          "path": "wykłady",
+          "files": [
+            {
+              "slug": "1e-podobienstwo-spiralne",
+              "fileName": "(1 E) Podobieństwo spiralne.pdf",
+              "name": "Podobieństwo spiralne.pdf"
+            },
+            {
+              "slug": "1t-zasada-minimum-i-maksimum",
+              "fileName": "(1 T) - Zasada minimum i maksimum.pdf",
+              "name": "Zasada minimum i maksimum.pdf"
+            },
+            {
+              "slug": "1l-wzory-skroconego-mnozenia",
+              "fileName": "(1 Ł) - Wzory skróconego mnożenia.pdf",
+              "name": "Wzory skróconego mnożenia.pdf"
+            },
+            {
+              "slug": "2t-rownania-diofantyczne",
+              "fileName": "(2 T) - Równania diofantyczne.pdf",
+              "name": "Równania diofantyczne.pdf"
+            },
+            {
+              "slug": "2l-okregi-wpisane-i-opisane",
+              "fileName": "(2 Ł) - Okręgi wpisane i opisane.pdf",
+              "name": "Okręgi wpisane i opisane.pdf"
+            },
+
+            {
+              "slug": "3t-potega-punktu",
+              "fileName": "(3 T) - Potęga punktu.pdf",
+              "name": "Potęga punktu.pdf"
+            },
+            {
+              "slug": "3l-kolorowanie",
+              "fileName": "(3 Ł) - Kolorowanie.pdf",
+              "name": "Kolorowanie.pdf"
+            }
+          ]
+        }
+        ,
+          {
+            "name": "Warsztaty",
+            "path": "warsztaty",
+            "files": [
+              {
+              "slug": "2-warsztaty-modulo",
+              "fileName": "(2) warsztaty - modulo.pdf",
+              "name": "Modulo.pdf"
+            }
+            ]
+          }
+      ]
+    }
+  ]
+}
