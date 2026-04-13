@@ -1,5 +1,5 @@
 {
-  "name": "karto",
+  "name": "mom",
   "compatibility_date": "2026-02-19",
   "main": "./app/worker.ts",
   "compatibility_flags": ["nodejs_compat"],
