@@ -65,11 +65,10 @@
         },
         {
           "start": "17:00",
-          "title": "Wykład: Teoria gier",
+          "title": "Wykład: Algebra - wykład gościnny, Dominik Bysiewicz",
           "type": "lecture",
           "groups": ["starsza"],
           "location": "Świetlica",
-          "notes": "Możliwa zamiana dni",
           "duration": 105
         },
         {
@@ -164,10 +163,9 @@
         },
         {
           "start": "17:15",
-          "title": "Wykład: Algebra - wykład gościnny, Dominik Bysiewicz",
+          "title": "Wykład: Teoria gier",
           "type": "lecture",
           "groups": ["starsza"],
-          "notes": "Możliwa zamiana dni",
           "duration": 105
         },
         {
