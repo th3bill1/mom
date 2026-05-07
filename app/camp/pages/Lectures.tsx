@@ -31,9 +31,7 @@ const LECTURE_COLLECTIONS: LibraryCollection[] = [
         path: "wyklady",
         files: [
           { slug: "wyklad-1", fileName: "sobota-wyklad-1.pdf", name: "Wykład 1", placeholder: "Wykład będzie dostępny chwilę przed rozpoczęciem wykładu" },
-          { slug: "wyklad-2", fileName: "sobota-wyklad-2.pdf", name: "Wykład 2", placeholder: "Wykład będzie dostępny chwilę przed rozpoczęciem wykładu" },
-          { slug: "wyklad-3", fileName: "sobota-wyklad-3.pdf", name: "Warsztaty 1", placeholder: "Zadania warsztatowe będą dostępne chwilę przed rozpoczęciem warsztatów" },
-          { slug: "wyklad-4", fileName: "sobota-wyklad-4.pdf", name: "Warsztaty 2", placeholder: "Zadania warsztatowe będą dostępne chwilę przed rozpoczęciem warsztatów" },
+          { slug: "wyklad-2", fileName: "sobota-wyklad-2.pdf", name: "Wykład 2", placeholder: "Wykład będzie dostępny chwilę przed rozpoczęciem wykładu" }
         ],
       },
     ],
