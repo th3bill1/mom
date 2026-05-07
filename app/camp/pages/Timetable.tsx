@@ -11,6 +11,8 @@ const BLOCK_INSET_Y = 2;
 const BLOCK_INSET_X = 2;
 const MIN_EVENT_MINUTES = 15;
 
+const GROUPS = ["młodsza", "starsza", "elita"] as const;
+
 const typeClasses: Record<string, string> = {
   contest: "bg-blue-100 text-blue-900 border-blue-300 dark:bg-blue-950/50 dark:text-blue-200 dark:border-blue-900",
   lecture: "bg-violet-100 text-violet-900 border-violet-300 dark:bg-violet-950/50 dark:text-violet-200 dark:border-violet-900",
@@ -22,6 +24,7 @@ const typeClasses: Record<string, string> = {
 };
 
 type Slot = TimetableDay["slots"][number];
+type GroupFilter = typeof GROUPS[number] | null;
 
 type BaseItem = {
   key: string;
@@ -64,13 +67,46 @@ function minuteLabel(min: number) {
   return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
 }
 
+function addMinutes(hhmm: string, minutes: number) {
+  const total = toMin(hhmm) + minutes;
+  return minuteLabel(total);
+}
+
 function getTimeText(s: Slot) {
-  if (s.start && s.end) return `${s.start}–${s.end}`;
-  if (s.start && s.duration) return `${s.start} · ${s.duration} min`;
+  if (s.start && s.end && s.duration) {
+    return `${s.start}–${s.end} · ${s.duration} min`;
+  }
+
+  if (s.start && s.end) {
+    return `${s.start}–${s.end}`;
+  }
+
+  if (s.start && s.duration) {
+    const end = addMinutes(s.start, s.duration);
+    return `${s.start}–${end} · ${s.duration} min`;
+  }
+
   if (s.start) return s.start;
   if (s.end) return `–${s.end}`;
   if (s.duration) return `${s.duration} min`;
+
   return "";
+}
+
+function filterDaysByGroup(days: TimetableDay[], selectedGroup: GroupFilter): TimetableDay[] {
+  return days.map((day) => ({
+    ...day,
+    slots: day.slots.filter((slot) => {
+      if (!selectedGroup) {
+        return slot.type !== "free_time";
+      }
+
+      return (
+        slot.groups?.includes(selectedGroup) ||
+        slot.groups?.includes("wszyscy")
+      );
+    }),
+  }));
 }
 
 function buildClusters(day: TimetableDay): Cluster[] {
@@ -84,7 +120,7 @@ function buildClusters(day: TimetableDay): Cluster[] {
           : startMin + MIN_EVENT_MINUTES;
 
       return {
-        key: `${day.label}-${i}`,
+        key: `${day.label}-${i}-${s.title}-${s.start ?? ""}`,
         s,
         startMin,
         endMin: Math.max(endMin, startMin + 1),
@@ -214,10 +250,19 @@ function computeDayLayout(
     cursorY = clusterBottom + CLUSTER_GAP_PX;
   }
 
+    const uniqueHourLines = Array.from(
+    new Map(
+      hourLines.map((line) => [
+        line.minute,
+        line,
+      ])
+    ).values()
+  );
+
   return {
     blocks,
     totalHeight: Math.max(cursorY - CLUSTER_GAP_PX, 0),
-    hourLines,
+    hourLines: uniqueHourLines,
   };
 }
 
@@ -270,6 +315,7 @@ function BlockContent({
 
 export default function Timetable() {
   const [days, setDays] = useState<TimetableDay[]>([]);
+  const [selectedGroup, setSelectedGroup] = useState<GroupFilter>(null);
   const [measuredHeights, setMeasuredHeights] = useState<Record<string, number>>({});
   const measureRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
@@ -279,9 +325,14 @@ export default function Timetable() {
       .then(d => setDays(d.days));
   }, []);
 
+  const filteredDays = useMemo(
+    () => filterDaysByGroup(days, selectedGroup),
+    [days, selectedGroup]
+  );
+
   const dayStructures = useMemo(
-    () => days.map((day) => ({ day, clusters: buildClusters(day) })),
-    [days]
+    () => filteredDays.map((day) => ({ day, clusters: buildClusters(day) })),
+    [filteredDays]
   );
 
   useLayoutEffect(() => {
@@ -313,6 +364,35 @@ export default function Timetable() {
 
   return (
     <div>
+      <div className="mb-6 flex flex-wrap items-center justify-center gap-2">
+        <button
+          type="button"
+          onClick={() => setSelectedGroup(null)}
+          className={`rounded-md border px-3 py-1.5 text-sm font-medium transition ${
+            selectedGroup === null
+              ? "bg-primary text-primary-foreground"
+              : "bg-background hover:bg-muted hover:cursor-pointer"
+          }`}
+        >
+          Wszystkie
+        </button>
+
+        {GROUPS.map((group) => (
+          <button
+            key={group}
+            type="button"
+            onClick={() => setSelectedGroup(group)}
+            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition ${
+              selectedGroup === group
+                ? "bg-primary text-primary-foreground"
+                : "bg-background hover:bg-muted hover:cursor-pointer"
+            }`}
+          >
+            {group}
+          </button>
+        ))}
+      </div>
+
       <div className="flex gap-8 overflow-x-auto pb-4 pr-2">
         {laidOutDays.map(({ day, clusters, layout }) => {
           const { blocks, totalHeight, hourLines } = layout;
@@ -348,7 +428,6 @@ export default function Timetable() {
                     />
                   ))}
 
-                  {/* hidden measurement layer */}
                   <div className="pointer-events-none absolute inset-0 opacity-0">
                     {clusters.flatMap((cluster) =>
                       cluster.items.map((item) => {
@@ -375,7 +454,6 @@ export default function Timetable() {
                     )}
                   </div>
 
-                  {/* visible blocks */}
                   {blocks.map(({ key, s, top, height, col, cols }) => {
                     const totalGap = (cols - 1) * GAP_PX;
                     const width = `calc((100% - ${totalGap}px) / ${cols} - 4px)`;
