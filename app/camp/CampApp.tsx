@@ -9,6 +9,8 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "~/componen
 import { Separator } from "~/components/ui/separator";
 import { cn } from "~/lib/utils";
 import Archive, { ArchiveFileView } from "./pages/Archive";
+import Lectures, { LecturesFileView } from "./pages/Lectures";
+import Tasks, { TasksFileView } from "./pages/Tasks";
 
 export default function CampApp() {
   const link = "px-2";
@@ -44,10 +46,9 @@ export default function CampApp() {
         <CardContent className="pt-4">
           <nav className="flex flex-wrap gap-2">
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/kalendarz">Kalendarz</NavLink>
+            <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/zadania">Zadania</NavLink>
+            <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/wyklady">Wyklady i Warsztaty</NavLink>
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/archiwum">Archiwum</NavLink>
-            {/* <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/zadania">Zadania</NavLink>
-            <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/wyklady">Wyklady</NavLink>
-            */}
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/mecz">Mecz Matematyczny</NavLink>
           </nav>
         </CardContent>
@@ -57,27 +58,13 @@ export default function CampApp() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/kalendarz" element={<Timetable />} />
-          <Route path="/archiwum" element={<Archive />} />
-          <Route path="/archiwum/:campId/:category/:fileSlug" element={<ArchiveFileView />} />
-          <Route path="/mecz" element={<Match />} />
-          {/* <Route path="/zadania" element={<TasksArchive />} />
-          <Route path="/zadania/mlodsza" element={<Mlodsza />} />
-          <Route path="/zadania/starsza" element={<Starsza />} />
-          <Route path="/zadania/elita" element={<Elita />} />
+          <Route path="/zadania" element={<Tasks />} />
+          <Route path="/zadania/:collectionId/:category/:fileSlug" element={<TasksFileView />} />
           <Route path="/wyklady" element={<Lectures />} />
-          <Route path="/wyklady/wsm" element={<WSM />} />
-          <Route path="/wyklady/zmm" element={<ZMM />} />
-          <Route path="/wyklady/ps" element={<PS />} />
-          <Route path="/wyklady/owio" element={<OWIO />} />
-          <Route path="/wyklady/rd" element={<RD />} />
-          <Route path="/wyklady/wm" element={<WM />} />
-          <Route path="/wyklady/kol" element={<KOL />} />
-          <Route path="/wyklady/pp" element={<PP />} />
-          <Route path="/wyklady/wie" element={<WIE />} />
-          <Route path="/mecz/zadania" element={<MatchTasks />} />
-          <Route path="/mecz/mlodsza" element={<MlodszaMecz />} />
-          <Route path="/mecz/starsza" element={<StarszaMecz />} />
-          <Route path="/mecz/elita" element={<ElitaMecz />} /> */}
+          <Route path="/wyklady/:collectionId/:category/:fileSlug" element={<LecturesFileView />} />
+          <Route path="/archiwum" element={<Archive />} />
+          <Route path="/archiwum/:collectionId/:category/:fileSlug" element={<ArchiveFileView />} />
+          <Route path="/mecz" element={<Match />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
