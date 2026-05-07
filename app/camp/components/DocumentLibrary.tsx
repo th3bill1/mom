@@ -55,7 +55,7 @@ type DocumentLibraryFileViewProps = {
 
 export function PdfViewer({ file }: { file: string }) {
   return (
-    <div className="h-[85vh] w-full">
+    <div className="h-[200vh] w-full">
       <iframe
         src={`${file}#view=FitH`}
         className="h-full w-full rounded-lg border"

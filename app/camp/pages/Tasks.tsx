@@ -12,11 +12,11 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
     sections: [
       {
         name: "Zadania dzienne",
-        path: "dzienne",
+        path: "kontesty",
         files: [
-          { slug: "mlodsza", fileName: "piatek-mlodsza.pdf", name: "Grupa mlodsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia kontestu"  },
-          { slug: "starsza", fileName: "piatek-starsza.pdf", name: "Grupa starsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia kontestu"  },
-          { slug: "elita", fileName: "piatek-elita.pdf", name: "Grupa elita", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia kontestu" },
+          { slug: "mlodsza", fileName: "C1 młodsza.pdf", name: "Grupa mlodsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia kontestu"},
+          { slug: "starsza", fileName: "C1 starsza.pdf", name: "Grupa starsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia kontestu"},
+          { slug: "elita", fileName: "C1 Elita.pdf", name: "Grupa elita", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia kontestu"},
         ],
       },
     ],
@@ -27,7 +27,7 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
     sections: [
       {
         name: "Zadania dzienne",
-        path: "dzienne",
+        path: "kontesty",
         files: [
           { slug: "mlodsza", fileName: "sobota-mlodsza.pdf", name: "Grupa mlodsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia kontestu"  },
           { slug: "starsza", fileName: "sobota-starsza.pdf", name: "Grupa starsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia kontestu"  },
@@ -61,7 +61,7 @@ export function TasksFileView() {
       backLabel="Wroc do zadan"
       entries={TASK_FILES}
       createFileUrl={(entry) =>
-        `/data/tasks/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.originalFileName)}`
+        `/data/zadania/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.categoryPath)}/${encodeURIComponent(entry.originalFileName)}`
       }
     />
   );
@@ -75,7 +75,7 @@ export default function Tasks() {
       baseRoute="/zadania"
       collections={TASK_COLLECTIONS}
       getFileUrl={(entry) =>
-        `/data/tasks/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.originalFileName)}`
+        `/data/zadania/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.categoryPath)}/${encodeURIComponent(entry.originalFileName)}`
       }
     />
   );
