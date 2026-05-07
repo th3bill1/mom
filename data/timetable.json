@@ -241,6 +241,21 @@
           "approx": true
         },
         {
+          "start": "10:00",
+          "title": "Praca zadaniami z Meczu Matematycznego",
+          "type": "free_time",
+          "groups": ["starsza", "elita"],
+          "duration": 120,
+          "approx": true
+        },
+        {
+          "start": "12:00",
+          "title":"Czas wolny",
+          "type": "free_time",
+          "groups": ["młodsza"],
+          "duration": 150
+        },
+        {
           "start": "12:00",
           "title": "Mecz Matematyczny",
           "type": "match",
