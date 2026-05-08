@@ -14,7 +14,7 @@ const LECTURE_COLLECTIONS: LibraryCollection[] = [
         name: "Wykłady",
         path: "wyklady",
         files: [
-          { slug: "wyklad-1", fileName: "piatek-wyklad-1.pdf", name: "Wykład 1", placeholder: "Wykład będzie dostępny chwilę przed rozpoczęciem wykładu" },
+          { slug: "Zasada minimum i maksimum", fileName: "min-max.pdf", name: "Wykład 1"},
           { slug: "wyklad-2", fileName: "piatek-wyklad-2.pdf", name: "Wykład 2", placeholder: "Wykład będzie dostępny chwilę przed rozpoczęciem wykładu" },
           { slug: "wyklad-3", fileName: "piatek-wyklad-3.pdf", name: "Warsztaty 1", placeholder: "Zadania warsztatowe będą dostępne chwilę przed rozpoczęciem warsztatów" },
           { slug: "wyklad-4", fileName: "piatek-wyklad-4.pdf", name: "Warsztaty 2", placeholder: "Zadania warsztatowe będą dostępne chwilę przed rozpoczęciem warsztatów" },
@@ -47,7 +47,7 @@ export function LecturesFileView() {
       backLabel="Wroc do wykladow"
       entries={LECTURE_FILES}
       createFileUrl={(entry) =>
-        `/data/lectures/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.originalFileName)}`
+        `/data/wyklady_warsztaty/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.originalFileName)}`
       }
     />
   );
@@ -61,7 +61,7 @@ export default function Lectures() {
       baseRoute="/wyklady"
       collections={LECTURE_COLLECTIONS}
       getFileUrl={(entry) =>
-        `/data/lectures/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.originalFileName)}`
+        `/data/wyklady_warsztaty/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.originalFileName)}`
       }
     />
   );
