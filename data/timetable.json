@@ -37,28 +37,28 @@
           "start": "14:30",
           "title": "Czas wolny",
           "type": "free_time",
-          "groups": ["młodsza", "starsza"],
+          "groups": ["młodsza"],
           "duration": 105
         },
         {
           "start": "14:30",
           "title": "Czas wolny",
           "type": "free_time",
-          "groups": ["elita"],
+          "groups": ["starsza"],
           "duration": 60
+        },
+        {
+          "start": "14:30",
+          "title": "Czas wolny",
+          "type": "free_time",
+          "groups": ["elita"],
+          "duration": 105
         },
         {
           "start": "15:30",
           "title": "Omówienie kontestu",
           "type": "other",
-          "groups": ["elita"],
-          "duration": 45
-        },
-        {
-          "start": "16:15",
-          "title": "Czas wolny",
-          "type": "free_time",
-          "groups": ["elita"],
+          "groups": ["starsza"],
           "duration": 45
         },
         {
@@ -73,7 +73,7 @@
           "start": "16:15",
           "title": "Omówienie kontestu",
           "type": "other",
-          "groups": ["starsza"],
+          "groups": ["elita"],
           "duration": 45
         },
         {
