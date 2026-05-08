@@ -14,9 +14,9 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
         name: "Zadania dzienne",
         path: "kontesty",
         files: [
-          { slug: "mlodsza", fileName: "C1 młodsza.pdf", name: "Grupa mlodsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia kontestu"},
-          { slug: "starsza", fileName: "C1 starsza.pdf", name: "Grupa starsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia kontestu"},
-          { slug: "elita", fileName: "C1 Elita.pdf", name: "Grupa elita", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia kontestu"},
+          { slug: "mlodsza", fileName: "C1 młodsza.pdf", name: "Grupa mlodsza"},
+          { slug: "starsza", fileName: "C1 starsza.pdf", name: "Grupa starsza"},
+          { slug: "elita", fileName: "C1 Elita.pdf", name: "Grupa elita"},
         ],
       },
     ],
