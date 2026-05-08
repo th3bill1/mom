@@ -16,7 +16,7 @@ const LECTURE_COLLECTIONS: LibraryCollection[] = [
         files: [
           { slug: "min-max", fileName: "min-max.pdf", name: "Zasada minimum i maksimum"},
           { slug: "wyklad-2", fileName: "piatek-wyklad-2.pdf", name: "Wykład 2", placeholder: "Wykład będzie dostępny chwilę przed rozpoczęciem wykładu" },
-          { slug: "wyklad-3", fileName: "piatek-wyklad-3.pdf", name: "Warsztaty 1", placeholder: "Zadania warsztatowe będą dostępne chwilę przed rozpoczęciem warsztatów" },
+          { slug: "obr-odb", fileName: "obr-odb.pdf", name: "Obroty i odbicia"},
           { slug: "wyklad-4", fileName: "piatek-wyklad-4.pdf", name: "Warsztaty 2", placeholder: "Zadania warsztatowe będą dostępne chwilę przed rozpoczęciem warsztatów" },
         ],
       },
