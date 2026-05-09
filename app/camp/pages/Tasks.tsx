@@ -16,7 +16,7 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
         files: [
           { slug: "mlodsza", fileName: "C1 młodsza.pdf", name: "Grupa mlodsza"},
           { slug: "starsza", fileName: "C1 starsza.pdf", name: "Grupa starsza"},
-          { slug: "elita", fileName: "C1 Elita.pdf", name: "Grupa elita"},
+          { slug: "elita", fileName: "C1 Elita.pdf", name: "Elita"},
         ],
       },
     ],
@@ -31,7 +31,7 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
         files: [
           { slug: "mlodsza", fileName: "C2 młodsza.pdf", name: "Grupa mlodsza" },
           { slug: "starsza", fileName: "C2 starsza.pdf", name: "Grupa starsza" },
-          { slug: "elita", fileName: "C2 Elita.pdf", name: "Grupa elita" },
+          { slug: "elita", fileName: "C2 Elita.pdf", name: "Elita" },
         ],
       },
     ],
@@ -44,8 +44,9 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
         name: "Zadania finałowe",
         path: "final",
         files: [
-          { slug: "grupa-1", fileName: "mecz-grupa-1.pdf", name: "Grupa 1", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia Meczu Matematycznego" },
-          { slug: "grupa-2", fileName: "mecz-grupa-2.pdf", name: "Grupa 2", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia Meczu Matematycznego" },
+          { slug: "mecz-mlodsza", fileName: "mecz-mlodsza.pdf", name: "Grupa mlodsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia Meczu Matematycznego" },
+          { slug: "mecz-starsza", fileName: "mecz-starsza.pdf", name: "Grupa starsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia Meczu Matematycznego" },
+          { slug: "mecz-elita", fileName: "mecz-elita.pdf", name: "Elita", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia Meczu Matematycznego" },
         ],
       },
     ],
@@ -61,7 +62,7 @@ export function TasksFileView() {
       backLabel="Wroc do zadan"
       entries={TASK_FILES}
       createFileUrl={(entry) =>
-        `/data/zadania/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.categoryPath)}/${encodeURIComponent(entry.originalFileName)}`
+        `/data/zadania/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.originalFileName)}`
       }
     />
   );
@@ -75,7 +76,7 @@ export default function Tasks() {
       baseRoute="/zadania"
       collections={TASK_COLLECTIONS}
       getFileUrl={(entry) =>
-        `/data/zadania/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.categoryPath)}/${encodeURIComponent(entry.originalFileName)}`
+        `/data/zadania/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.originalFileName)}`
       }
     />
   );

@@ -104,6 +104,11 @@ export default function Match() {
             zadań przygotowanych przez swoją drużynę.
           </p>
         </div>
+        <div className="bg-green-50 border border-green-200 rounded-xl p-4 dark:bg-green-950/50 dark:border-green-900">
+          <p className="text-green-900 dark:text-green-200">
+            Zadania są dostępne w zakładce <Link to="/zadania" className="underline">Zadania</Link>. Powodzenia!
+          </p>
+        </div>
       </section>
     </div>
   );
