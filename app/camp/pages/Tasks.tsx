@@ -44,9 +44,9 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
         name: "Zadania finałowe",
         path: "final",
         files: [
-          { slug: "mecz-mlodsza", fileName: "mecz-mlodsza.pdf", name: "Grupa mlodsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia Meczu Matematycznego" },
-          { slug: "mecz-starsza", fileName: "mecz-starsza.pdf", name: "Grupa starsza", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia Meczu Matematycznego" },
-          { slug: "mecz-elita", fileName: "mecz-elita.pdf", name: "Elita", placeholder: "Zadanie będzie dostępne w momencie rozpoczęcia Meczu Matematycznego" },
+          { slug: "mecz-mlodsza", fileName: "mecz-mlodsza.pdf", name: "Grupa mlodsza"},
+          { slug: "mecz-starsza", fileName: "mecz-starsza.pdf", name: "Grupa starsza"},
+          { slug: "mecz-elita", fileName: "mecz-elita.pdf", name: "Elita"},
         ],
       },
     ],
