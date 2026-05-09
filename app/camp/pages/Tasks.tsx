@@ -14,7 +14,7 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
         name: "Zadania dzienne",
         path: "kontesty",
         files: [
-          { slug: "mlodsza", fileName: "C1 młodsza.pdf", name: "Grupa mlodsza"},
+          { slug: "mlodsza", fileName: "C1 młodsza.pdf", name: "Grupa młodsza"},
           { slug: "starsza", fileName: "C1 starsza.pdf", name: "Grupa starsza"},
           { slug: "elita", fileName: "C1 Elita.pdf", name: "Elita"},
         ],
@@ -29,7 +29,7 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
         name: "Zadania dzienne",
         path: "kontesty",
         files: [
-          { slug: "mlodsza", fileName: "C2 młodsza.pdf", name: "Grupa mlodsza" },
+          { slug: "mlodsza", fileName: "C2 młodsza.pdf", name: "Grupa młodsza" },
           { slug: "starsza", fileName: "C2 starsza.pdf", name: "Grupa starsza" },
           { slug: "elita", fileName: "C2 Elita.pdf", name: "Elita" },
         ],
@@ -59,7 +59,7 @@ export function TasksFileView() {
   return (
     <DocumentLibraryFileView
       baseRoute="/zadania"
-      backLabel="Wroc do zadan"
+      backLabel="Wróć do zadań"
       entries={TASK_FILES}
       createFileUrl={(entry) =>
         `/data/zadania/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.originalFileName)}`

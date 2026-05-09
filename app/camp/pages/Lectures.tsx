@@ -51,7 +51,7 @@ export function LecturesFileView() {
   return (
     <DocumentLibraryFileView
       baseRoute="/wyklady"
-      backLabel="Wroc do wykladow"
+      backLabel="Wróć do wykładów"
       entries={LECTURE_FILES}
       createFileUrl={(entry) =>
         `/data/wyklady_warsztaty/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.categoryPath)}/${encodeURIComponent(entry.originalFileName)}`

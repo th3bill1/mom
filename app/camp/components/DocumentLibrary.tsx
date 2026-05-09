@@ -106,7 +106,7 @@ export function DocumentLibrary({
         <div className="flex flex-wrap items-center gap-2">
           {icon ?? <Folder className="h-5 w-5 text-muted-foreground" />}
           <h1 className="text-xl font-semibold">{title}</h1>
-          <Badge variant="secondary">{entries.length} plikow</Badge>
+          <Badge variant="secondary">{entries.length} plików</Badge>
         </div>
         <p className="mt-2 text-sm text-muted-foreground">{description}</p>
       </header>
@@ -117,7 +117,7 @@ export function DocumentLibrary({
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center justify-between gap-2 text-base">
                 <span>{collection.title}</span>
-                <Badge variant="outline">{countCollectionFiles(collection)} plikow</Badge>
+                <Badge variant="outline">{countCollectionFiles(collection)} plików</Badge>
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -193,7 +193,7 @@ export function DocumentLibrary({
       </div>
 
       <div className="text-sm text-muted-foreground">
-        Wszystkie dokumenty otwierają się bezpośrednio na stronie. W razie problemów z wyświetleniem pliku, mozna go pobrać klikając ikonę pobierania obok nazwy pliku.
+        Wszystkie dokumenty otwierają się bezpośrednio na stronie. W razie problemów z wyświetleniem pliku, można go pobrać klikając ikonę pobierania obok nazwy pliku.
       </div>
     </section>
   );

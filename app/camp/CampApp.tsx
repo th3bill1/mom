@@ -47,7 +47,7 @@ export default function CampApp() {
           <nav className="flex flex-wrap gap-2">
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/kalendarz">Kalendarz</NavLink>
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/zadania">Zadania</NavLink>
-            <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/wyklady">Wyklady i Warsztaty</NavLink>
+            <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/wyklady">Wykłady i Warsztaty</NavLink>
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/archiwum">Archiwum</NavLink>
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/mecz">Mecz Matematyczny</NavLink>
           </nav>
@@ -72,10 +72,10 @@ export default function CampApp() {
       <Card className="mt-6">
         <CardFooter className="flex-col items-center justify-center gap-2 py-4 text-center text-sm text-muted-foreground">
           <div>
-            Strona stworzona przez <span className="font-medium text-foreground">Wojciecha Wojcika</span>
+            Strona stworzona przez <span className="font-medium text-foreground">Wojciecha Wójcika</span>
           </div>
           <div>
-            Kadra: <span className="font-medium text-foreground">Tomasz Martynski</span>, <span className="font-medium text-foreground">Wojciech Wojcik</span>, <span className="font-medium text-foreground">Daniel Pazdro</span>, <span className="font-medium text-foreground">Anna Martynska</span>, <span className="font-medium text-foreground">Daniel Kopacz</span>
+            Kadra: <span className="font-medium text-foreground">Tomasz Martyński</span>, <span className="font-medium text-foreground">Wojciech Wójcik</span>, <span className="font-medium text-foreground">Daniel Pazdro</span>, <span className="font-medium text-foreground">Anna Martyńska</span>, <span className="font-medium text-foreground">Daniel Kopacz</span>
           </div>
         </CardFooter>
       </Card>

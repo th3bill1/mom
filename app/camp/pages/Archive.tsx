@@ -18,7 +18,7 @@ export function ArchiveFileView() {
   return (
     <DocumentLibraryFileView
       baseRoute="/archiwum"
-      backLabel="Wroc do archiwum"
+      backLabel="Wróć do archiwum"
       entries={ARCHIVE_FILES}
       createFileUrl={(entry) =>
         toArchiveFileUrl(entry.collectionId, entry.categoryPath, entry.originalFileName)
@@ -30,8 +30,8 @@ export function ArchiveFileView() {
 export default function Archive() {
   return (
     <DocumentLibrary
-      title="Archiwum materialow MOM"
-      description="Zbior zawiera kontesty, mecze i wyklady z poprzednich edycji obozu."
+      title="Archiwum materiałów MOM"
+      description="Zbiór zawiera kontesty, mecze i wykłady z poprzednich edycji obozu."
       baseRoute="/archiwum"
       collections={ARCHIVE}
       getFileUrl={(entry) =>
