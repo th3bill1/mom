@@ -16,6 +16,13 @@ const LECTURE_COLLECTIONS: LibraryCollection[] = [
         files: [
           { slug: "min-max", fileName: "min-max.pdf", name: "Zasada minimum i maksimum"},
           { slug: "uk-rown", fileName: "uk-rown.pdf", name: "Układy równań"},
+          
+        ],
+      },
+      {
+        name: "Warsztaty",
+        path: "warsztaty",
+        files: [
           { slug: "obr-odb", fileName: "obr-odb.pdf", name: "Obroty i odbicia"},
           { slug: "olm-ling", fileName: "olm-ling.pdf", name: "Lingwistyka matematyczna"},
         ],
@@ -30,8 +37,8 @@ const LECTURE_COLLECTIONS: LibraryCollection[] = [
         name: "Wykłady",
         path: "wyklady",
         files: [
-          { slug: "wyklad-1", fileName: "sobota-wyklad-1.pdf", name: "Wykład 1", placeholder: "Wykład będzie dostępny chwilę przed rozpoczęciem wykładu" },
-          { slug: "wyklad-2", fileName: "sobota-wyklad-2.pdf", name: "Wykład 2", placeholder: "Wykład będzie dostępny chwilę przed rozpoczęciem wykładu" }
+          { slug: "nier-sred", fileName: "nier-sred.pdf", name: "Nierówności między średnimi"},
+          { slug: "teor-gier", fileName: "teo-gier.pdf", name: "Teoria gier"}
         ],
       },
     ],
