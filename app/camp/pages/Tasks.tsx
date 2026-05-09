@@ -44,7 +44,7 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
         name: "Zadania finałowe",
         path: "final",
         files: [
-          { slug: "mecz-mlodsza", fileName: "mecz-mlodsza.pdf", name: "Grupa mlodsza"},
+          { slug: "mecz-mlodsza", fileName: "mecz-mlodsza.pdf", name: "Grupa młodsza"},
           { slug: "mecz-starsza", fileName: "mecz-starsza.pdf", name: "Grupa starsza"},
           { slug: "mecz-elita", fileName: "mecz-elita.pdf", name: "Elita"},
         ],
