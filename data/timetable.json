@@ -123,8 +123,7 @@
           "type": "meal",
           "groups": ["wszyscy"],
           "duration": 45,
-          "approx": true,
-          "notes": "Godzina orientacyjna"
+          "approx": true
         },
         {
           "start": "09:45",
@@ -132,8 +131,7 @@
           "type": "contest",
           "groups": ["wszyscy"],
           "duration": 240,
-          "approx": true,
-          "notes": "Godzina orientacyjna"
+          "approx": true
         },
         {
           "start": "14:00",
@@ -211,11 +209,19 @@
         },
         {
           "start": "20:00",
-          "title": "Podział na Mecz Matematyczny i rozdanie zadań, praca nad zadaniami z Meczu",
+          "title": "Podział na Mecz Matematyczny i rozdanie zadań",
           "type": "other",
-          "groups": ["młodsza", "starsza", "elita"],
+          "groups": ["wszyscy"],
+          "location": "Świetlica",
+          "duration": 60
+        },
+        {
+          "start": "21:00",
+          "title": "Praca nad zadaniami z Meczu Matematycznego",
+          "groups": ["wszyscy"],
           "notes": "Czas nieograniczony :3",
-          "duration": 120
+          "duration": 180,
+          "approx": true
         }
       ]
     },
@@ -227,39 +233,63 @@
           "title": "Śniadanie",
           "type": "meal",
           "groups": ["wszyscy"],
-          "duration": 60,
-          "approx": true,
-          "notes": "Godzina orientacyjna"
+          "duration": 30,
+          "approx": true
         },
         {
-          "start": "10:00",
+          "start": "9:30",
           "title": "Mecz Matematyczny",
           "type": "match",
-          "groups": ["młodsza"],
+          "groups": ["elita"],
           "notes": "Inne grupy mogą przyjść jako publiczność",
           "duration": 120,
           "approx": true
         },
         {
-          "start": "10:00",
-          "title": "Praca zadaniami z Meczu Matematycznego",
+          "start": "11:30",
+          "title": "Czas wolny",
           "type": "free_time",
-          "groups": ["starsza", "elita"],
+          "groups": ["elita"],
+          "duration": 180
+        },
+        {
+          "start": "9:30",
+          "title": "Praca nad zadaniami z Meczu Matematycznego",
+          "type": "free_time",
+          "groups": ["młodsza"],
+          "duration": 90,
+          "approx": true
+        },
+        {
+          "start": "11:00",
+          "title": "Mecz Matematyczny",
+          "type": "match",
+          "groups": ["młodsza"],
+          "location": "Świetlica",
+          "notes": "Inne grupy mogą przyjść jako publiczność",
           "duration": 120,
           "approx": true
         },
         {
-          "start": "12:00",
-          "title":"Czas wolny",
+          "start": "13:00",
+          "title": "Czas wolny",
           "type": "free_time",
           "groups": ["młodsza"],
-          "duration": 150
+          "duration": 90
         },
         {
-          "start": "12:00",
+          "start": "9:30",
+          "title": "Praca nad zadaniami z Meczu Matematycznego",
+          "type": "free_time",
+          "groups": ["starsza"],
+          "duration": 180,
+          "approx": true
+        },
+        {
+          "start": "12:30",
           "title": "Mecz Matematyczny",
           "type": "match",
-          "groups": ["starsza", "elita"],
+          "groups": ["starsza"],
           "notes": "Inne grupy mogą przyjść jako publiczność",
           "duration": 120,
           "approx": true
