@@ -52,7 +52,7 @@ export default function Landing() {
               <p className="max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
                 Dziękujemy wszystkim uczestnikom za obecność, energię i świetną atmosferę.
                 Na stronie pozostają wszystkie zadania z tego i poprzednich obozów, a nowa
-                edycja wróci pod koniec wakacji wraz z informacjami o miejscu i dacie.
+                edycja wróci jesienią wraz z informacjami o miejscu i dacie.
               </p>
             </div>
 
