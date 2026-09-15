@@ -314,6 +314,105 @@
             ]
           }
       ]
+    },
+    {
+      "id": "mom4",
+      "title": "MOM IV",
+      "sections": [
+        {
+          "name": "Kontesty",
+          "path": "kontesty",
+          "files": [
+            {
+              "slug": "c1-elita",
+              "fileName": "C1 Elita.pdf",
+              "name": "K1 Elita.pdf"
+            },
+            {
+              "slug": "c1-mlodsza",
+              "fileName": "C1 młodsza.pdf",
+              "name": "K1 młodsza.pdf"
+            },
+            {
+              "slug": "c1-starsza",
+              "fileName": "C1 starsza.pdf",
+              "name": "K1 starsza.pdf"
+            },
+            {
+              "slug": "c2-elita",
+              "fileName": "C2 Elita.pdf",
+              "name": "K2 Elita.pdf"
+            },
+            {
+              "slug": "c2-mlodsza",
+              "fileName": "C2 młodsza.pdf",
+              "name": "K2 młodsza.pdf"
+            },
+            {
+              "slug": "c2-starsza",
+              "fileName": "C2 starsza.pdf",
+              "name": "K2 starsza.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Mecze",
+          "path": "mecze",
+          "files": [
+            {
+              "slug": "iv-oboz-mecz-elita",
+              "fileName": "IV Oboz - mecz Elita.pdf",
+              "name": "Mecz Elita.pdf"
+            },
+            {
+              "slug": "iv-oboz-mecz-mlodsza",
+              "fileName": "IV Oboz - mecz młodsza.pdf",
+              "name": "Mecz młodsza.pdf"
+            },
+            {
+              "slug": "iv-oboz-mecz-starsza",
+              "fileName": "IV Oboz - mecz starsza.pdf",
+              "name": "Mecz starsza.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Wykłady",
+          "path": "wykłady",
+          "files": [
+            {
+              "slug": "Zasada minimum i maksimum",
+              "fileName": "min-max.pdf",
+              "name": "Zasada minimum i maksimum.pdf"
+            },
+            {
+              "slug": "Układy równań",
+              "fileName": "uk-rown.pdf",
+              "name": "Układy równań.pdf"
+            },
+            {
+              "slug": "Nierówności między średnimi",
+              "fileName": "nier-sred.pdf",
+              "name": "Nierówności między średnimi.pdf"
+            },
+            {
+              "slug": "Teoria gier",
+              "fileName": "teo-gier.pdf",
+              "name": "Teoria gier.pdf"
+            },
+            {
+              "slug": "Obroty i odbicia",
+              "fileName": "obr-odb.pdf",
+              "name": "Obroty i odbicia.pdf"
+            },
+            {
+              "slug": "Ligwistyka matematyczna",
+              "fileName": "olm-ling.pdf",
+              "name": "Ligwistyka matematyczna.pdf"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

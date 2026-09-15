@@ -44,6 +44,7 @@ type DocumentLibraryProps = {
   collections: LibraryCollection[];
   getFileUrl: (entry: LibraryFileEntry) => string;
   icon?: ReactNode;
+  subtext?: boolean;
 };
 
 type DocumentLibraryFileViewProps = {
@@ -93,6 +94,7 @@ export function DocumentLibrary({
   collections,
   getFileUrl,
   icon,
+  subtext = true,
 }: DocumentLibraryProps) {
   const entries = buildLibraryEntries(collections);
 
@@ -192,9 +194,10 @@ export function DocumentLibrary({
         ))}
       </div>
 
-      <div className="text-sm text-muted-foreground">
+      {subtext && (<div className="text-sm text-muted-foreground">
         Wszystkie dokumenty otwierają się bezpośrednio na stronie. W razie problemów z wyświetleniem pliku, można go pobrać klikając ikonę pobierania obok nazwy pliku.
-      </div>
+      </div>)}
+      
     </section>
   );
 }

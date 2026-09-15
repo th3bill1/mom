@@ -7,16 +7,6 @@ export default function Match() {
         <h1 className="text-3xl font-bold">Mecz Matematyczny</h1>
       </header>
 
-      {/* Ogłoszenie / zapowiedź */}
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 dark:bg-blue-950/50 dark:border-blue-900">
-        <p className="text-blue-900 dark:text-blue-200">
-          <strong>Zapowiedź:</strong> w trakcie wieczoru i nocy poprzedzających mecz
-          drużyny będą otrzymywać od kadry <em>podpowiedzi</em> do zadań.
-          Czas na pracę nad zadaniami trwa aż do rozpoczęcia meczu
-          {/* (szczegóły w <Link to="/kalendarz" className="underline">kalendarzu</Link>)*/}. 
-        </p>
-      </div>
-
       {/* <div className="text-center">
         <Link
           to="/mecz/zadania"

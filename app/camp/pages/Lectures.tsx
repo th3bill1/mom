@@ -6,43 +6,43 @@ import {
 } from "../components/DocumentLibrary";
 
 const LECTURE_COLLECTIONS: LibraryCollection[] = [
-  {
-    id: "piatek",
-    title: "Piątek",
-    sections: [
-      {
-        name: "Wykłady",
-        path: "wyklady",
-        files: [
-          { slug: "min-max", fileName: "min-max.pdf", name: "Zasada minimum i maksimum"},
-          { slug: "uk-rown", fileName: "uk-rown.pdf", name: "Układy równań"},
+  // {
+  //   id: "piatek",
+  //   title: "Piątek",
+  //   sections: [
+  //     {
+  //       name: "Wykłady",
+  //       path: "wyklady",
+  //       files: [
+  //         { slug: "min-max", fileName: "min-max.pdf", name: "Zasada minimum i maksimum"},
+  //         { slug: "uk-rown", fileName: "uk-rown.pdf", name: "Układy równań"},
           
-        ],
-      },
-      {
-        name: "Warsztaty",
-        path: "warsztaty",
-        files: [
-          { slug: "obr-odb", fileName: "obr-odb.pdf", name: "Obroty i odbicia"},
-          { slug: "olm-ling", fileName: "olm-ling.pdf", name: "Lingwistyka matematyczna"},
-        ],
-      },
-    ],
-  },
-  {
-    id: "sobota",
-    title: "Sobota",
-    sections: [
-      {
-        name: "Wykłady",
-        path: "wyklady",
-        files: [
-          { slug: "nier-sred", fileName: "nier-sred.pdf", name: "Nierówności między średnimi"},
-          { slug: "teor-gier", fileName: "teo-gier.pdf", name: "Teoria gier"}
-        ],
-      },
-    ],
-  },
+  //       ],
+  //     },
+  //     {
+  //       name: "Warsztaty",
+  //       path: "warsztaty",
+  //       files: [
+  //         { slug: "obr-odb", fileName: "obr-odb.pdf", name: "Obroty i odbicia"},
+  //         { slug: "olm-ling", fileName: "olm-ling.pdf", name: "Lingwistyka matematyczna"},
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "sobota",
+  //   title: "Sobota",
+  //   sections: [
+  //     {
+  //       name: "Wykłady",
+  //       path: "wyklady",
+  //       files: [
+  //         { slug: "nier-sred", fileName: "nier-sred.pdf", name: "Nierówności między średnimi"},
+  //         { slug: "teor-gier", fileName: "teo-gier.pdf", name: "Teoria gier"}
+  //       ],
+  //     },
+  //   ],
+  // },
 ];
 
 const LECTURE_FILES = buildLibraryEntries(LECTURE_COLLECTIONS);
@@ -70,6 +70,7 @@ export default function Lectures() {
       getFileUrl={(entry) =>
         `/data/wyklady_warsztaty/${encodeURIComponent(entry.collectionId)}/${encodeURIComponent(entry.categoryPath)}/${encodeURIComponent(entry.originalFileName)}`
       }
+      subtext={false}
     />
   );
 }

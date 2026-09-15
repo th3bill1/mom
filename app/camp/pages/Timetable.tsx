@@ -362,132 +362,141 @@ export default function Timetable() {
     [dayStructures, measuredHeights]
   );
 
-  return (
-    <div>
-      <div className="mb-6 flex flex-wrap items-center justify-center gap-2">
-        <button
-          type="button"
-          onClick={() => setSelectedGroup(null)}
-          className={`rounded-md border px-3 py-1.5 text-sm font-medium transition ${
-            selectedGroup === null
-              ? "bg-primary text-primary-foreground"
-              : "bg-background hover:bg-muted hover:cursor-pointer"
-          }`}
-        >
-          Wszystkie
-        </button>
-
-        {GROUPS.map((group) => (
-          <button
-            key={group}
-            type="button"
-            onClick={() => setSelectedGroup(group)}
-            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition ${
-              selectedGroup === group
-                ? "bg-primary text-primary-foreground"
-                : "bg-background hover:bg-muted hover:cursor-pointer"
-            }`}
-          >
-            {group}
-          </button>
-        ))}
-      </div>
-
-      <div className="flex gap-8 overflow-x-auto pb-4 pr-2">
-        {laidOutDays.map(({ day, clusters, layout }) => {
-          const { blocks, totalHeight, hourLines } = layout;
-
-          return (
-            <div key={day.label} className="w-90 shrink-0">
-              <h2 className="mb-3 text-center text-xl font-semibold tracking-tight">
-                {day.label}
-              </h2>
-
-              <div className="grid grid-cols-[56px_1fr] gap-3">
-                <div className="relative" style={{ height: totalHeight }}>
-                  {hourLines.map(({ minute, y }, idx) => (
-                    <div
-                      key={`${day.label}-mark-${minute}-${idx}`}
-                      className="absolute w-full -translate-y-1/2 select-none pr-2 text-right text-xs font-medium tabular-nums text-muted-foreground"
-                      style={{ top: y }}
-                    >
-                      {minuteLabel(minute)}
-                    </div>
-                  ))}
-                </div>
-
-                <div
-                  className="relative rounded-lg border bg-card p-2"
-                  style={{ height: totalHeight }}
-                >
-                  {hourLines.map(({ minute, y }, idx) => (
-                    <div
-                      key={`${day.label}-line-${minute}-${idx}`}
-                      className="absolute left-0 right-0 border-t border-border/60"
-                      style={{ top: y }}
-                    />
-                  ))}
-
-                  <div className="pointer-events-none absolute inset-0 opacity-0">
-                    {clusters.flatMap((cluster) =>
-                      cluster.items.map((item) => {
-                        const totalGap = (cluster.cols - 1) * GAP_PX;
-                        const width = `calc((100% - ${totalGap}px) / ${cluster.cols} - 4px)`;
-                        const left = `calc(((${width}) + ${GAP_PX}px) * ${item.col} + ${BLOCK_INSET_X}px)`;
-
-                        return (
-                          <div
-                            key={`measure-${item.key}`}
-                            className={`absolute rounded-md border ${cluster.cols >= 3 ? "px-1.5 py-1" : "px-2.5 py-1.5"} ${typeClasses[item.s.type] || typeClasses.other}`}
-                            style={{ top: 0, left, width }}
-                          >
-                            <div
-                              ref={(el) => {
-                                measureRefs.current[item.key] = el;
-                              }}
-                            >
-                              <BlockContent slot={item.s} cols={cluster.cols} />
-                            </div>
-                          </div>
-                        );
-                      })
-                    )}
-                  </div>
-
-                  {blocks.map(({ key, s, top, height, col, cols }) => {
-                    const totalGap = (cols - 1) * GAP_PX;
-                    const width = `calc((100% - ${totalGap}px) / ${cols} - 4px)`;
-                    const left = `calc(((${width}) + ${GAP_PX}px) * ${col} + ${BLOCK_INSET_X}px)`;
-
-                    const tooltip = [
-                      s.title,
-                      getTimeText(s),
-                      s.location,
-                      s.groups?.length ? `Grupy: ${s.groups.join(", ")}` : "",
-                      s.notes,
-                    ]
-                      .filter(Boolean)
-                      .join("\n");
-
-                    return (
-                      <div
-                        key={key}
-                        className={`absolute rounded-md border shadow-sm ${cols >= 3 ? "px-1.5 py-1" : "px-2.5 py-1.5"} ${typeClasses[s.type] || typeClasses.other}`}
-                        style={{ top, height, left, width }}
-                        title={tooltip}
-                      >
-                        <div className="h-full overflow-hidden">
-                          <BlockContent slot={s} cols={cols} />
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+  return ( //pojawi sie juz w krotce
+    <div className="space-y-6">
+      <header className="text-center space-y-2">
+        <p className="text-muted-foreground">
+          Kalendarz pojawi się wkrótce.
+        </p>
+      </header>
     </div>
   );
+  // return (
+  //   <div>
+  //     <div className="mb-6 flex flex-wrap items-center justify-center gap-2">
+  //       <button
+  //         type="button"
+  //         onClick={() => setSelectedGroup(null)}
+  //         className={`rounded-md border px-3 py-1.5 text-sm font-medium transition ${
+  //           selectedGroup === null
+  //             ? "bg-primary text-primary-foreground"
+  //             : "bg-background hover:bg-muted hover:cursor-pointer"
+  //         }`}
+  //       >
+  //         Wszystkie
+  //       </button>
+
+  //       {GROUPS.map((group) => (
+  //         <button
+  //           key={group}
+  //           type="button"
+  //           onClick={() => setSelectedGroup(group)}
+  //           className={`rounded-md border px-3 py-1.5 text-sm font-medium transition ${
+  //             selectedGroup === group
+  //               ? "bg-primary text-primary-foreground"
+  //               : "bg-background hover:bg-muted hover:cursor-pointer"
+  //           }`}
+  //         >
+  //           {group}
+  //         </button>
+  //       ))}
+  //     </div>
+
+  //     <div className="flex gap-8 overflow-x-auto pb-4 pr-2">
+  //       {laidOutDays.map(({ day, clusters, layout }) => {
+  //         const { blocks, totalHeight, hourLines } = layout;
+
+  //         return (
+  //           <div key={day.label} className="w-90 shrink-0">
+  //             <h2 className="mb-3 text-center text-xl font-semibold tracking-tight">
+  //               {day.label}
+  //             </h2>
+
+  //             <div className="grid grid-cols-[56px_1fr] gap-3">
+  //               <div className="relative" style={{ height: totalHeight }}>
+  //                 {hourLines.map(({ minute, y }, idx) => (
+  //                   <div
+  //                     key={`${day.label}-mark-${minute}-${idx}`}
+  //                     className="absolute w-full -translate-y-1/2 select-none pr-2 text-right text-xs font-medium tabular-nums text-muted-foreground"
+  //                     style={{ top: y }}
+  //                   >
+  //                     {minuteLabel(minute)}
+  //                   </div>
+  //                 ))}
+  //               </div>
+
+  //               <div
+  //                 className="relative rounded-lg border bg-card p-2"
+  //                 style={{ height: totalHeight }}
+  //               >
+  //                 {hourLines.map(({ minute, y }, idx) => (
+  //                   <div
+  //                     key={`${day.label}-line-${minute}-${idx}`}
+  //                     className="absolute left-0 right-0 border-t border-border/60"
+  //                     style={{ top: y }}
+  //                   />
+  //                 ))}
+
+  //                 <div className="pointer-events-none absolute inset-0 opacity-0">
+  //                   {clusters.flatMap((cluster) =>
+  //                     cluster.items.map((item) => {
+  //                       const totalGap = (cluster.cols - 1) * GAP_PX;
+  //                       const width = `calc((100% - ${totalGap}px) / ${cluster.cols} - 4px)`;
+  //                       const left = `calc(((${width}) + ${GAP_PX}px) * ${item.col} + ${BLOCK_INSET_X}px)`;
+
+  //                       return (
+  //                         <div
+  //                           key={`measure-${item.key}`}
+  //                           className={`absolute rounded-md border ${cluster.cols >= 3 ? "px-1.5 py-1" : "px-2.5 py-1.5"} ${typeClasses[item.s.type] || typeClasses.other}`}
+  //                           style={{ top: 0, left, width }}
+  //                         >
+  //                           <div
+  //                             ref={(el) => {
+  //                               measureRefs.current[item.key] = el;
+  //                             }}
+  //                           >
+  //                             <BlockContent slot={item.s} cols={cluster.cols} />
+  //                           </div>
+  //                         </div>
+  //                       );
+  //                     })
+  //                   )}
+  //                 </div>
+
+  //                 {blocks.map(({ key, s, top, height, col, cols }) => {
+  //                   const totalGap = (cols - 1) * GAP_PX;
+  //                   const width = `calc((100% - ${totalGap}px) / ${cols} - 4px)`;
+  //                   const left = `calc(((${width}) + ${GAP_PX}px) * ${col} + ${BLOCK_INSET_X}px)`;
+
+  //                   const tooltip = [
+  //                     s.title,
+  //                     getTimeText(s),
+  //                     s.location,
+  //                     s.groups?.length ? `Grupy: ${s.groups.join(", ")}` : "",
+  //                     s.notes,
+  //                   ]
+  //                     .filter(Boolean)
+  //                     .join("\n");
+
+  //                   return (
+  //                     <div
+  //                       key={key}
+  //                       className={`absolute rounded-md border shadow-sm ${cols >= 3 ? "px-1.5 py-1" : "px-2.5 py-1.5"} ${typeClasses[s.type] || typeClasses.other}`}
+  //                       style={{ top, height, left, width }}
+  //                       title={tooltip}
+  //                     >
+  //                       <div className="h-full overflow-hidden">
+  //                         <BlockContent slot={s} cols={cols} />
+  //                       </div>
+  //                     </div>
+  //                   );
+  //                 })}
+  //               </div>
+  //             </div>
+  //           </div>
+  //         );
+  //       })}
+  //     </div>
+  //   </div>
+  // );
 }
