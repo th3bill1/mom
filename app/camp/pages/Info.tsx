@@ -1,6 +1,6 @@
 export default function Info() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-6 space-y-6">
+    <div className="max-w-3xl mx-auto py-10 px-2 space-y-6">
       <h1 className="text-2xl font-bold text-foreground text-center">
         Informacje o zajęciach
       </h1>
@@ -12,7 +12,7 @@ export default function Info() {
         </li>
         <li>
           Kontesty zadaniowe i wykłady na różnych poziomach, dopasowanych do
-          Was - dwie grupy trudności.
+          Was - trzy grupy trudności.
         </li>
         <li>Dodatkowe zajęcia dla chętnych - warsztaty lingwistyczne i warsztaty z geometrii</li>
         <li>

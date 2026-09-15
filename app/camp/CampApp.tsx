@@ -11,6 +11,7 @@ import { cn } from "~/lib/utils";
 import Archive, { ArchiveFileView } from "./pages/Archive";
 import Lectures, { LecturesFileView } from "./pages/Lectures";
 import Tasks, { TasksFileView } from "./pages/Tasks";
+import About from "./pages/About";
 
 export default function CampApp() {
   const link = "px-2";
@@ -50,6 +51,7 @@ export default function CampApp() {
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/wyklady">Wykłady i Warsztaty</NavLink>
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/archiwum">Archiwum</NavLink>
             <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/mecz">Mecz Matematyczny</NavLink>
+            <NavLink className={({ isActive }) => cn(buttonVariants({ variant: "ghost", size: "sm" }), active({ isActive }))} to="/o-nas">O nas</NavLink>
           </nav>
         </CardContent>
       </Card>
@@ -65,6 +67,7 @@ export default function CampApp() {
           <Route path="/archiwum" element={<Archive />} />
           <Route path="/archiwum/:collectionId/:category/:fileSlug" element={<ArchiveFileView />} />
           <Route path="/mecz" element={<Match />} />
+          <Route path="/o-nas" element={<About />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
