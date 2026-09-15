@@ -21,7 +21,7 @@ export default function About() {
         <h2 className="text-2xl font-semibold">Jak to się zaczęło?</h2>
         <div className="space-y-4 leading-7 text-muted-foreground">
           <p>
-            Zaczęło się w 2023 roku od pomysłu, żeby wrócić do szkoły i
+            Zaczęło się w 2021 roku od pomysłu, żeby wrócić do szkoły i
             poprowadzić kilka zajęć dla młodszych kolegów. Chcieliśmy pokazać
             matematykę od strony, której sami szukaliśmy, przygotowując się do
             konkursów i olimpiad: wymagającą, ale też pełną ciekawych pomysłów
@@ -46,7 +46,7 @@ export default function About() {
             ["Tomasz Martyński", "Jeden z założycieli Obozu i jego główny organizator, obecnie student matematyki."],
             ["Wojciech Wójcik", "Jeden z założycieli Obozu, obecnie student, informatyk."],
             ["Daniel Pazdro", "Jeden z założycieli Obozu, obecnie student informatyki i pasjonat chemii."],
-            ["Anna Martyńska", "Członkini kadry Mieleckiego Obozu Matematycznego, finalistka Olimpiady Matematycznej, obecnie studentka matematyki."],
+            ["Anna Martyńska", "Członkini kadry Mieleckiego Obozu Matematycznego, finalistka Olimpiady Matematycznej, obecnie studentka chemii."],
             ["Daniel Kopacz", "Członek kadry Mieleckiego Obozu Matematycznego, obecnie student matematyki."],
           ].map(([name, description]) => (
             <article key={name} className="rounded-xl border p-5">

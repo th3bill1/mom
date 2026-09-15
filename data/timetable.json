@@ -265,7 +265,7 @@
         },
         {
           "start": "19:00",
-          "title": "Kolacja – ognisko",
+          "title": "Kolacja",
           "type": "meal",
           "groups": ["wszyscy"],
           "duration": 60,
