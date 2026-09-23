@@ -8,81 +8,18 @@
           "title": "Wyjazd spod II LO, Park Leśny",
           "type": "other",
           "groups": ["wszyscy"],
-          "duration": 120,
-          "approx": true
-        },
-        {
-          "start": "10:15",
-          "title": "Oficjalne przywitanie",
-          "type": "other",
-          "groups": ["wszyscy"],
-          "duration": 15,
-          "approx": true
-        },
-        {
-          "start": "10:30",
-          "title": "Kontest 1",
-          "type": "contest",
-          "groups": ["wszyscy"],
-          "duration": 210
-        },
-        {
-          "start": "14:00",
-          "title": "Obiad",
-          "type": "meal",
-          "groups": ["wszyscy"],
-          "duration": 30
-        },
-        {
-          "start": "14:30",
-          "title": "Czas wolny",
-          "type": "free_time",
-          "groups": ["młodsza", "starsza", "elita"],
-          "duration": 105
-        },
-        {
-          "start": "17:00",
-          "title": "Wykład: Przekształcenia algebraiczne",
-          "type": "lecture",
-          "groups": ["młodsza"],
-          "duration": 105
-        },
-        {
-          "start": "17:00",
-          "title": "Wykład: Niezmienniki",
-          "type": "lecture",
-          "groups": ["starsza"],
-          "duration": 105
-        },
-        {
-          "start": "18:45",
-          "title": "Kolacja",
-          "type": "meal",
-          "groups": ["wszyscy"],
-          "duration": 45
-        },
-        {
-          "start": "19:30",
-          "title": "Warsztaty: Lingwistyka matematyczna",
-          "type": "workshop",
-          "groups": ["młodsza", "starsza", "elita"],
-          "duration": 105
-        }
-      ]
-    },
-    {
-      "label": "Piątek",
-      "slots": [
-        {
-          "start": "09:00",
-          "title": "Śniadanie",
-          "type": "meal",
-          "groups": ["wszyscy"],
-          "duration": 45,
+          "duration": 105,
           "approx": true
         },
         {
           "start": "9:45",
+          "title": "Oficjalne przywitanie",
+          "type": "other",
+          "groups": ["wszyscy"],
+          "duration": 15
+        },
+        {
+          "start": "10:00",
           "title": "Kontest 1",
           "type": "contest",
           "groups": ["wszyscy"],
@@ -99,99 +36,84 @@
           "start": "14:30",
           "title": "Czas wolny",
           "type": "free_time",
-          "groups": ["młodsza"],
-          "duration": 105
+          "groups": ["wszyscy"],
+          "duration": 135,
+          "notes": "Weźcie piłkę do siatki/nogi, paletki do badmintona"
         },
         {
-          "start": "14:30",
-          "title": "Czas wolny",
-          "type": "free_time",
-          "groups": ["starsza"],
-          "duration": 60
-        },
-        {
-          "start": "14:30",
-          "title": "Czas wolny",
-          "type": "free_time",
-          "groups": ["elita"],
-          "duration": 105
-        },
-        {
-          "start": "15:30",
+          "start": "16:45",
           "title": "Omówienie kontestu",
           "type": "other",
           "groups": ["starsza"],
-          "duration": 45
+          "duration": 45,
+          "notes": "S1"
         },
         {
-          "start": "16:15",
-          "title": "Omówienie kontestu",
-          "type": "other",
-          "groups": ["młodsza"],
-          "duration": 45
-        },
-        {
-          "start": "16:15",
+          "start": "16:45",
           "title": "Omówienie kontestu",
           "type": "other",
           "groups": ["elita"],
-          "duration": 45
+          "duration": 45,
+          "notes": "S2"
         },
         {
-          "start": "17:00",
-          "title": "Wykład: Własności trójkąta",
+          "start": "17:30",
+          "title": "Wykład: Przekształcenia algebraiczne",
           "type": "lecture",
           "groups": ["młodsza"],
-          "duration": 105
+          "duration": 90,
+          "notes": "S1"
         },
         {
-          "start": "17:00",
-          "title": "Wykład: Potęga punktu",
+          "start": "17:30",
+          "title": "Wykład: Niezmienniki",
           "type": "lecture",
-          "groups": ["starsza"],
-          "duration": 105
+          "groups": ["starsza", "elita"],
+          "duration": 90,
+          "notes": "S2"
         },
         {
-          "start": "17:00",
-          "title": "Wykład: Ciągi",
-          "type": "lecture",
-          "groups": ["elita"],
-          "duration": 105
-        },
-        {
-          "start": "18:45",
+          "start": "19:00",
           "title": "Kolacja",
           "type": "meal",
           "groups": ["wszyscy"],
           "duration": 45
         },
         {
-          "start": "21:15",
-          "title": "Warsztaty z Anią",
+          "start": "19:45",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": ["młodsza"],
+          "duration": 45,
+          "notes": "S1"
+        },
+        {
+          "start": "20:30",
+          "title": "Warsztaty nocne: Lingwistyka matematyczna",
           "type": "workshop",
           "groups": ["młodsza", "starsza", "elita"],
-          "duration": 90
+          "duration": 90,
+          "approx": true,
+          "notes": "S1"
         }
       ]
     },
     {
-      "label": "Sobota",
+      "label": "Piątek",
       "slots": [
         {
-          "start": "09:00",
+          "start": "9:00",
           "title": "Śniadanie",
           "type": "meal",
           "groups": ["wszyscy"],
-          "duration": 45,
-          "approx": true
+          "duration": 30
         },
         {
-          "start": "09:45",
+          "start": "9:30",
           "title": "Kontest 2",
           "type": "contest",
           "groups": ["wszyscy"],
-          "duration": 240,
-          "approx": true
+          "duration": 240
         },
         {
           "start": "14:00",
@@ -204,88 +126,177 @@
           "start": "14:30",
           "title": "Czas wolny",
           "type": "free_time",
-          "groups": ["młodsza", "elita"],
-          "duration": 120
+          "groups": ["wszyscy"],
+          "duration": 90
         },
         {
-          "start": "14:30",
-          "title": "Czas wolny",
-          "type": "free_time",
-          "groups": ["starsza"],
-          "duration": 75
-        },
-        {
-          "start": "15:45",
-          "title": "Omówienie kontestu",
-          "type": "other",
-          "groups": ["starsza"],
-          "duration": 45
-        },
-        {
-          "start": "16:30",
-          "title": "Czas wolny",
-          "type": "free_time",
-          "groups": ["starsza"],
-          "duration": 45
-        },
-        {
-          "start": "16:30",
+          "start": "16:00",
           "title": "Omówienie kontestu",
           "type": "other",
           "groups": ["młodsza"],
-          "duration": 45
+          "duration": 45,
+          "notes": "S1"
         },
         {
-          "start": "16:30",
+          "start": "16:00",
+          "title": "Wykład z finalistą OM",
+          "type": "lecture",
+          "groups": ["elita"],
+          "duration": 90,
+          "notes": "S2"
+        },
+        {
+          "start": "16:45",
+          "title": "Wykład: Własności trójkąta",
+          "type": "lecture",
+          "groups": ["młodsza"],
+          "duration": 105,
+          "notes": "S1"
+        },
+        {
+          "start": "16:45",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": ["starsza"],
+          "duration": 45,
+          "notes": "S3"
+        },
+        {
+          "start": "17:30",
+          "title": "Wykład: Potęga punktu",
+          "type": "lecture",
+          "groups": ["starsza"],
+          "duration": 90,
+          "notes": "S2"
+        },
+        {
+          "start": "17:30",
           "title": "Omówienie kontestu",
           "type": "other",
           "groups": ["elita"],
-          "duration": 45
-        },
-        {
-          "start": "17:15",
-          "title": "Wykład: Indukcja matematyczna",
-          "type": "lecture",
-          "groups": ["młodsza"],
-          "duration": 105
-        },
-        {
-          "start": "17:15",
-          "title": "Wykład: Liczby pierwsze",
-          "type": "lecture",
-          "groups": ["starsza"],
-          "duration": 105
-        },
-        {
-          "start": "17:15",
-          "title": "Wykład: Środkowe i dwusieczne",
-          "type": "lecture",
-          "groups": ["elita"],
-          "duration": 105
+          "duration": 45,
+          "notes": "S3"
         },
         {
           "start": "19:00",
           "title": "Kolacja",
           "type": "meal",
           "groups": ["wszyscy"],
-          "duration": 60,
+          "duration": 60
+        },
+        {
+          "start": "20:00",
+          "title": "Warsztaty nocne z finalistką OM",
+          "type": "workshop",
+          "groups": ["starsza", "elita"],
+          "duration": 90,
           "approx": true,
-          "notes": "Jeżeli pogoda dopisze"
+          "notes": "S1"
+        }
+      ]
+    },
+    {
+      "label": "Sobota",
+      "slots": [
+        {
+          "start": "9:00",
+          "title": "Śniadanie",
+          "type": "meal",
+          "groups": ["wszyscy"],
+          "duration": 30
+        },
+        {
+          "start": "9:30",
+          "title": "Kontest 3",
+          "type": "contest",
+          "groups": ["wszyscy"],
+          "duration": 240
+        },
+        {
+          "start": "14:00",
+          "title": "Obiad",
+          "type": "meal",
+          "groups": ["wszyscy"],
+          "duration": 30
+        },
+        {
+          "start": "14:30",
+          "title": "Czas wolny",
+          "type": "free_time",
+          "groups": ["wszyscy"],
+          "duration": 90
+        },
+        {
+          "start": "16:00",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": ["młodsza"],
+          "duration": 45,
+          "notes": "S1"
+        },
+        {
+          "start": "16:00",
+          "title": "Wykład: Liczby pierwsze",
+          "type": "lecture",
+          "groups": ["starsza"],
+          "duration": 90,
+          "notes": "S2"
+        },
+        {
+          "start": "16:45",
+          "title": "Wykład: Zasada szufladkowa",
+          "type": "lecture",
+          "groups": ["młodsza"],
+          "duration": 105,
+          "notes": "S1"
+        },
+        {
+          "start": "16:45",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": ["elita"],
+          "duration": 45,
+          "notes": "S3"
+        },
+        {
+          "start": "17:30",
+          "title": "Wykład: Środkowe i dwusieczne",
+          "type": "lecture",
+          "groups": ["elita"],
+          "duration": 90,
+          "notes": "S2"
+        },
+        {
+          "start": "17:30",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": ["starsza"],
+          "duration": 45,
+          "notes": "S3"
+        },
+        {
+          "start": "19:00",
+          "title": "Kolacja",
+          "type": "meal",
+          "groups": ["wszyscy"],
+          "duration": 60
         },
         {
           "start": "20:00",
           "title": "Podział na Mecz Matematyczny i rozdanie zadań",
           "type": "other",
           "groups": ["wszyscy"],
-          "duration": 60
+          "duration": 30,
+          "approx": true
         },
         {
-          "start": "21:00",
+          "start": "20:30",
           "title": "Praca nad zadaniami z Meczu Matematycznego",
+          "type": "other",
           "groups": ["wszyscy"],
-          "notes": "Czas nieograniczony :3",
           "duration": 180,
-          "approx": true
+          "approx": true,
+          "notes": "Czas nieograniczony :3"
         }
       ]
     },
@@ -293,77 +304,42 @@
       "label": "Niedziela",
       "slots": [
         {
-          "start": "09:00",
+          "start": "9:00",
           "title": "Śniadanie",
           "type": "meal",
           "groups": ["wszyscy"],
-          "duration": 30,
-          "approx": true
+          "duration": 45
         },
         {
-          "start": "9:30",
+          "start": "9:45",
           "title": "Mecz Matematyczny",
           "type": "match",
-          "groups": ["elita"],
-          "notes": "Inne grupy mogą przyjść jako publiczność",
-          "duration": 120,
-          "approx": true
-        },
-        {
-          "start": "11:30",
-          "title": "Czas wolny",
-          "type": "free_time",
-          "groups": ["elita"],
-          "duration": 180
-        },
-        {
-          "start": "9:30",
-          "title": "Praca nad zadaniami z Meczu Matematycznego",
-          "type": "free_time",
-          "groups": ["młodsza"],
-          "duration": 90,
-          "approx": true
+          "groups": ["starsza"],
+          "duration": 75,
+          "notes": "S2"
         },
         {
           "start": "11:00",
           "title": "Mecz Matematyczny",
           "type": "match",
           "groups": ["młodsza"],
-          "notes": "Inne grupy mogą przyjść jako publiczność",
-          "duration": 120,
-          "approx": true
+          "duration": 75,
+          "notes": "S1"
         },
         {
-          "start": "13:00",
-          "title": "Czas wolny",
-          "type": "free_time",
-          "groups": ["młodsza"],
-          "duration": 90
-        },
-        {
-          "start": "9:30",
-          "title": "Praca nad zadaniami z Meczu Matematycznego",
-          "type": "free_time",
-          "groups": ["starsza"],
-          "duration": 180,
-          "approx": true
-        },
-        {
-          "start": "12:30",
+          "start": "12:15",
           "title": "Mecz Matematyczny",
           "type": "match",
-          "groups": ["starsza"],
-          "notes": "Inne grupy mogą przyjść jako publiczność",
-          "duration": 120,
-          "approx": true
+          "groups": ["elita"],
+          "duration": 135,
+          "notes": "S2"
         },
         {
           "start": "14:30",
           "title": "Zakończenie obozu, podsumowanie",
           "type": "other",
           "groups": ["wszyscy"],
-          "duration": 30,
-          "approx": true
+          "duration": 30
         },
         {
           "start": "15:00",
