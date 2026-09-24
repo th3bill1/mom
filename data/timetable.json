@@ -37,19 +37,11 @@
           "title": "Czas wolny",
           "type": "free_time",
           "groups": ["wszyscy"],
-          "duration": 135,
+          "duration": 90,
           "notes": "Weźcie piłkę do siatki/nogi, paletki do badmintona"
         },
         {
-          "start": "16:45",
-          "title": "Omówienie kontestu",
-          "type": "other",
-          "groups": ["starsza"],
-          "duration": 45,
-          "notes": "S1"
-        },
-        {
-          "start": "16:45",
+          "start": "16:00",
           "title": "Omówienie kontestu",
           "type": "other",
           "groups": ["elita"],
@@ -57,7 +49,15 @@
           "notes": "S2"
         },
         {
-          "start": "17:30",
+          "start": "16:45",
+          "title": "Wykład: Ciągi",
+          "type": "lecture",
+          "groups": ["elita"],
+          "duration": 90,
+          "notes": "S2"
+        },
+        {
+          "start": "16:00",
           "title": "Wykład: Przekształcenia algebraiczne",
           "type": "lecture",
           "groups": ["młodsza"],
@@ -66,9 +66,17 @@
         },
         {
           "start": "17:30",
+          "title": "Czas wolny",
+          "type": "free_time",
+          "groups": ["młodsza"],
+          "duration": 90,
+          "notes": "Weźcie piłkę do siatki/nogi, paletki do badmintona"
+        },
+        {
+          "start": "17:30",
           "title": "Wykład: Niezmienniki",
           "type": "lecture",
-          "groups": ["starsza", "elita"],
+          "groups": ["starsza"],
           "duration": 90,
           "notes": "S2"
         },
@@ -80,7 +88,7 @@
           "duration": 45
         },
         {
-          "start": "19:45",
+          "start": "20:00",
           "title": "Omówienie kontestu",
           "type": "other",
           "groups": ["młodsza"],
@@ -88,7 +96,15 @@
           "notes": "S1"
         },
         {
-          "start": "20:30",
+          "start": "20:00",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": ["starsza"],
+          "duration": 45,
+          "notes": "S1"
+        },
+        {
+          "start": "21:00",
           "title": "Warsztaty nocne: Lingwistyka matematyczna",
           "type": "workshop",
           "groups": ["młodsza", "starsza", "elita"],
@@ -150,7 +166,7 @@
           "title": "Wykład: Własności trójkąta",
           "type": "lecture",
           "groups": ["młodsza"],
-          "duration": 105,
+          "duration": 90,
           "notes": "S1"
         },
         {
@@ -247,7 +263,7 @@
           "title": "Wykład: Zasada szufladkowa",
           "type": "lecture",
           "groups": ["młodsza"],
-          "duration": 105,
+          "duration": 90,
           "notes": "S1"
         },
         {
