@@ -37,8 +37,7 @@
           "title": "Czas wolny",
           "type": "free_time",
           "groups": ["wszyscy"],
-          "duration": 90,
-          "notes": "Weźcie piłkę do siatki/nogi, paletki do badmintona"
+          "duration": 90
         },
         {
           "start": "16:00",
@@ -69,8 +68,7 @@
           "title": "Czas wolny",
           "type": "free_time",
           "groups": ["młodsza"],
-          "duration": 90,
-          "notes": "Weźcie piłkę do siatki/nogi, paletki do badmintona"
+          "duration": 90
         },
         {
           "start": "17:30",

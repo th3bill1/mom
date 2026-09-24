@@ -492,6 +492,32 @@ export default function Timetable() {
           );
         })}
       </div>
+      <div className="mt-8 rounded-xl border bg-card p-5 shadow-sm">
+        <h2 className="mb-2 text-lg font-semibold">
+          Co robić w czasie wolnym?
+        </h2>
+
+        <p className="mb-4 text-sm text-muted-foreground">
+          Pomiędzy zajęciami możecie odpocząć albo spędzić czas razem.
+        </p>
+
+        <div className="space-y-3 text-sm leading-relaxed text-foreground">
+          <p>
+            🏐 Warto zabrać ze sobą piłkę do siatkówki lub piłki nożnej,
+            paletki do badmintona, karty, szachy albo inne gry planszowe.
+          </p>
+
+          <p>
+            🚶 Wyjścia poza teren ośrodka, w tym do sklepu, będą możliwe
+            wyłącznie w grupach i pod opieką wychowawców.
+          </p>
+
+          <p>
+            📋 Wszystkie aktywności organizowane poza zajęciami powinny być
+            wcześniej uzgodnione z wychowawcami.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
