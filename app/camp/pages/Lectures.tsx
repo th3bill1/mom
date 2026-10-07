@@ -7,42 +7,21 @@ import {
 
 const LECTURE_COLLECTIONS: LibraryCollection[] = [
   // {
-  //   id: "piatek",
-  //   title: "Piątek",
+  //   id: "czwartek",
+  //   title: "Czwartek",
   //   sections: [
   //     {
   //       name: "Wykłady",
   //       path: "wyklady",
   //       files: [
-  //         { slug: "min-max", fileName: "min-max.pdf", name: "Zasada minimum i maksimum"},
-  //         { slug: "uk-rown", fileName: "uk-rown.pdf", name: "Układy równań"},
+  //         { slug: "(1M) Przekształcenia algebraiczne", fileName: "(1M) Przekształcenia algebraiczne.pdf", name: "Przekształcenia algebraiczne"},
+  //         { slug: "(1S) Niezmienniki", fileName: "(1S) Niezmienniki.pdf", name: "Niezmienniki"},
+  //         { slug: "(1E) Ciągi", fileName: "(1E) Ciągi.pdf", name: "Ciągi"},
           
   //       ],
-  //     },
-  //     {
-  //       name: "Warsztaty",
-  //       path: "warsztaty",
-  //       files: [
-  //         { slug: "obr-odb", fileName: "obr-odb.pdf", name: "Obroty i odbicia"},
-  //         { slug: "olm-ling", fileName: "olm-ling.pdf", name: "Lingwistyka matematyczna"},
-  //       ],
-  //     },
+  //     }
   //   ],
-  // },
-  // {
-  //   id: "sobota",
-  //   title: "Sobota",
-  //   sections: [
-  //     {
-  //       name: "Wykłady",
-  //       path: "wyklady",
-  //       files: [
-  //         { slug: "nier-sred", fileName: "nier-sred.pdf", name: "Nierówności między średnimi"},
-  //         { slug: "teor-gier", fileName: "teo-gier.pdf", name: "Teoria gier"}
-  //       ],
-  //     },
-  //   ],
-  // },
+  // }
 ];
 
 const LECTURE_FILES = buildLibraryEntries(LECTURE_COLLECTIONS);

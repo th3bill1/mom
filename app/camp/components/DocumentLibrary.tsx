@@ -108,7 +108,7 @@ export function DocumentLibrary({
         <div className="flex flex-wrap items-center gap-2">
           {icon ?? <Folder className="h-5 w-5 text-muted-foreground" />}
           <h1 className="text-xl font-semibold">{title}</h1>
-          <Badge variant="secondary">{entries.length} plików</Badge>
+          <Badge variant="secondary">{entries.length} {PlikOdmiana({ count: entries.length })}</Badge>
         </div>
         <p className="mt-2 text-sm text-muted-foreground">{description}</p>
       </header>
@@ -119,7 +119,7 @@ export function DocumentLibrary({
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center justify-between gap-2 text-base">
                 <span>{collection.title}</span>
-                <Badge variant="outline">{countCollectionFiles(collection)} plików</Badge>
+                <Badge variant="outline">{countCollectionFiles(collection)} {PlikOdmiana({ count: countCollectionFiles(collection) })}</Badge>
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -200,6 +200,16 @@ export function DocumentLibrary({
       
     </section>
   );
+}
+
+export function PlikOdmiana({ count }: { count: number }) {
+  if (count === 1) {
+    return "plik";
+  } else if (count >= 2 && count <= 4) {
+    return "pliki";
+  } else {
+    return "plików";
+  }
 }
 
 export function DocumentLibraryFileView({
