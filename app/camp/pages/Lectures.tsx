@@ -6,22 +6,22 @@ import {
 } from "../components/DocumentLibrary";
 
 const LECTURE_COLLECTIONS: LibraryCollection[] = [
-  // {
-  //   id: "czwartek",
-  //   title: "Czwartek",
-  //   sections: [
-  //     {
-  //       name: "Wykłady",
-  //       path: "wyklady",
-  //       files: [
-  //         { slug: "(1M) Przekształcenia algebraiczne", fileName: "(1M) Przekształcenia algebraiczne.pdf", name: "Przekształcenia algebraiczne"},
-  //         { slug: "(1S) Niezmienniki", fileName: "(1S) Niezmienniki.pdf", name: "Niezmienniki"},
-  //         { slug: "(1E) Ciągi", fileName: "(1E) Ciągi.pdf", name: "Ciągi"},
+  {
+    id: "czwartek",
+    title: "Czwartek",
+    sections: [
+      {
+        name: "Wykłady",
+        path: "wyklady",
+        files: [
+          { slug: "(1M) Przekształcenia algebraiczne", fileName: "(1M) Przekształcenia algebraiczne.pdf", name: "Przekształcenia algebraiczne"},
+          { slug: "(1S) Niezmienniki", fileName: "(1S) Niezmienniki.pdf", name: "Niezmienniki"},
+          { slug: "(1E) Ciągi", fileName: "(1E) Ciągi.pdf", name: "Ciągi"},
           
-  //       ],
-  //     }
-  //   ],
-  // }
+        ],
+      }
+    ],
+  }
 ];
 
 const LECTURE_FILES = buildLibraryEntries(LECTURE_COLLECTIONS);
