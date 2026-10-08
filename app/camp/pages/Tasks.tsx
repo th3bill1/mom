@@ -20,7 +20,7 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
          ],
        },
      ],
-   }
+   },
   // {
   //   id: "piatek",
   //   title: "Piątek",

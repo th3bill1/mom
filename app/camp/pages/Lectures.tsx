@@ -19,6 +19,36 @@ const LECTURE_COLLECTIONS: LibraryCollection[] = [
           { slug: "(1E) Ciągi", fileName: "(1E) Ciągi.pdf", name: "Ciągi"},
           
         ],
+      },
+      {
+        name: "Warsztaty",
+        path: "warsztaty",
+        files: [
+          { slug: "(1M) Lingwistyka matematyczna", fileName: "(1M) Lingwistyka matematyczna.pdf", name: "Lingiwstyka matematyczna"}
+        ]
+      }
+    ],
+  },
+  {
+    id: "piatek",
+    title: "Piątek",
+    sections: [
+      {
+        name: "Wykłady",
+        path: "wyklady",
+        files: [
+          { slug: "(2M) Własności trójkąta", fileName: "(2M) Własności trójkąta.pdf", name: "Własności trójkąta"},
+          { slug: "(2S) Potęga punktu", fileName: "(2S) Potęga punktu.pdf", name: "Potęga punktu"},
+          { slug: "(2E) Wykładniki p-adyczne", fileName: "(2E) Wykładniki p-adyczne.pdf", name: "Wykładniki p-adyczne"},
+          
+        ],
+      },
+      {
+        name: "Warsztaty",
+        path: "warsztaty",
+        files: [
+          { slug: "(2W) Punkty izogonalnie sprzężone", fileName: "(2W) Punkty izogonalnie sprzężone.pdf", name: "Punkty izogonalnie sprzężone"}
+        ]
       }
     ],
   }
