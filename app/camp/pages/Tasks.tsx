@@ -6,21 +6,21 @@ import {
 } from "../components/DocumentLibrary";
 
 const TASK_COLLECTIONS: LibraryCollection[] = [
-  // {
-  //   id: "czwartek",
-  //   title: "Czwartek",
-  //   sections: [
-  //     {
-  //       name: "Zadania dzienne",
-  //       path: "kontesty",
-  //       files: [
-  //         { slug: "mlodsza", fileName: "C1 młodsza.pdf", name: "Grupa młodsza"},
-  //         { slug: "starsza", fileName: "C1 starsza.pdf", name: "Grupa starsza"},
-  //         { slug: "elita", fileName: "C1 Elita.pdf", name: "Elita"},
-  //       ],
-  //     },
-  //   ],
-  // },
+   {
+     id: "czwartek",
+     title: "Czwartek",
+     sections: [
+       {
+         name: "Zadania dzienne",
+         path: "kontesty",
+         files: [
+           { slug: "mlodsza", fileName: "C1 młodsza.pdf", name: "Grupa młodsza"},
+           { slug: "starsza", fileName: "C1 starsza.pdf", name: "Grupa starsza"},
+           { slug: "elita", fileName: "C1 Elita.pdf", name: "Elita"},
+         ],
+       },
+     ],
+   }
   // {
   //   id: "piatek",
   //   title: "Piątek",
