@@ -21,21 +21,21 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
        },
      ],
    },
-  // {
-  //   id: "piatek",
-  //   title: "Piątek",
-  //   sections: [
-  //     {
-  //       name: "Zadania dzienne",
-  //       path: "kontesty",
-  //       files: [
-  //         { slug: "mlodsza", fileName: "C2 młodsza.pdf", name: "Grupa młodsza"},
-  //         { slug: "starsza", fileName: "C2 starsza.pdf", name: "Grupa starsza"},
-  //         { slug: "elita", fileName: "C2 Elita.pdf", name: "Elita"},
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    id: "piatek",
+    title: "Piątek",
+    sections: [
+      {
+        name: "Zadania dzienne",
+        path: "kontesty",
+        files: [
+          { slug: "mlodsza", fileName: "C2 młodsza.pdf", name: "Grupa młodsza"},
+          { slug: "starsza", fileName: "C2 starsza.pdf", name: "Grupa starsza"},
+          { slug: "elita", fileName: "C2 Elita.pdf", name: "Elita"},
+        ],
+      },
+    ],
+  },
   // {
   //   id: "sobota",
   //   title: "Sobota",
