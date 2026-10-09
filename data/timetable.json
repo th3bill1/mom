@@ -12,18 +12,18 @@
           "approx": true
         },
         {
-          "start": "9:45",
+          "start": "10:00",
           "title": "Oficjalne przywitanie",
           "type": "other",
           "groups": ["wszyscy"],
           "duration": 15
         },
         {
-          "start": "10:00",
+          "start": "10:15",
           "title": "Kontest 1",
           "type": "contest",
           "groups": ["wszyscy"],
-          "duration": 240
+          "duration": 225
         },
         {
           "start": "14:00",
@@ -61,7 +61,7 @@
           "type": "lecture",
           "groups": ["młodsza"],
           "duration": 90,
-          "notes": "Jadalnia"
+          "notes": "Sala weselna"
         },
         {
           "start": "16:00",
@@ -69,7 +69,7 @@
           "type": "lecture",
           "groups": ["starsza"],
           "duration": 90,
-          "notes": "Jadalnia"
+          "notes": "Sala weselna"
         },
         {
           "start": "19:00",
@@ -82,17 +82,9 @@
           "start": "20:00",
           "title": "Omówienie kontestu",
           "type": "other",
-          "groups": ["młodsza"],
+          "groups": ["młodsza", "starsza"],
           "duration": 45,
-          "notes": "Jadalnia"
-        },
-        {
-          "start": "20:00",
-          "title": "Omówienie kontestu",
-          "type": "other",
-          "groups": ["starsza"],
-          "duration": 45,
-          "notes": "Sala smok"
+          "notes": "Sala weselna"
         },
         {
           "start": "21:00",
@@ -116,7 +108,7 @@
           "duration": 30
         },
         {
-          "start": "9:30",
+          "start": "10:00",
           "title": "Kontest 2",
           "type": "contest",
           "groups": ["wszyscy"],
@@ -138,35 +130,19 @@
         },
         {
           "start": "16:00",
-          "title": "Omówienie kontestu",
-          "type": "other",
-          "groups": ["młodsza"],
-          "duration": 45,
-          "notes": "S1"
-        },
-        {
-          "start": "16:00",
-          "title": "Wykład z finalistą OM",
+          "title": "Wykład: Wykładniki p-adyczne",
           "type": "lecture",
           "groups": ["elita"],
           "duration": 90,
-          "notes": "S2"
+          "notes": "Sala smok"
         },
         {
-          "start": "16:45",
+          "start": "16:00",
           "title": "Wykład: Własności trójkąta",
           "type": "lecture",
           "groups": ["młodsza"],
           "duration": 90,
-          "notes": "S1"
-        },
-        {
-          "start": "16:45",
-          "title": "Omówienie kontestu",
-          "type": "other",
-          "groups": ["starsza"],
-          "duration": 45,
-          "notes": "S3"
+          "notes": "Sala weselna"
         },
         {
           "start": "17:30",
@@ -174,7 +150,7 @@
           "type": "lecture",
           "groups": ["starsza"],
           "duration": 90,
-          "notes": "S2"
+          "notes": "Sala weselna"
         },
         {
           "start": "17:30",
@@ -182,7 +158,7 @@
           "type": "other",
           "groups": ["elita"],
           "duration": 45,
-          "notes": "S3"
+          "notes": "Sala smok"
         },
         {
           "start": "19:00",
@@ -191,14 +167,22 @@
           "groups": ["wszyscy"],
           "duration": 60
         },
-        {
+		{
           "start": "20:00",
+          "title": "Omówienie kontestu",
+          "type": "other",
+          "groups": ["młodsza", "starsza"],
+          "duration": 45,
+          "notes": "Sala weselna"
+        },
+        {
+          "start": "21:00",
           "title": "Warsztaty nocne: Punkty izogonalnie sprzężone",
           "type": "workshop",
           "groups": ["starsza", "elita"],
           "duration": 90,
           "approx": true,
-          "notes": "S1"
+          "notes": "Sala smok"
         }
       ]
     },
@@ -213,7 +197,7 @@
           "duration": 30
         },
         {
-          "start": "9:30",
+          "start": "10:00",
           "title": "Kontest 3",
           "type": "contest",
           "groups": ["wszyscy"],
@@ -231,15 +215,15 @@
           "title": "Czas wolny",
           "type": "free_time",
           "groups": ["wszyscy"],
-          "duration": 90
+          "duration": 60
         },
         {
-          "start": "16:00",
+          "start": "15:30",
           "title": "Omówienie kontestu",
           "type": "other",
           "groups": ["młodsza"],
           "duration": 45,
-          "notes": "S1"
+          "notes": "Sala smok"
         },
         {
           "start": "16:00",
@@ -247,15 +231,15 @@
           "type": "lecture",
           "groups": ["starsza"],
           "duration": 90,
-          "notes": "S2"
+          "notes": "Sala weselna"
         },
         {
-          "start": "16:45",
+          "start": "17:30",
           "title": "Wykład: Zasada szufladkowa",
           "type": "lecture",
           "groups": ["młodsza"],
           "duration": 90,
-          "notes": "S1"
+          "notes": "Sala weselna"
         },
         {
           "start": "16:45",
@@ -263,7 +247,7 @@
           "type": "other",
           "groups": ["elita"],
           "duration": 45,
-          "notes": "S3"
+          "notes": "Sala smok"
         },
         {
           "start": "17:30",
@@ -271,25 +255,25 @@
           "type": "lecture",
           "groups": ["elita"],
           "duration": 90,
-          "notes": "S2"
+          "notes": "Sala smok"
         },
         {
-          "start": "17:30",
+          "start": "15:30",
           "title": "Omówienie kontestu",
           "type": "other",
           "groups": ["starsza"],
-          "duration": 45,
-          "notes": "S3"
+          "duration": 30,
+          "notes": "Sala weselna"
         },
         {
           "start": "19:00",
-          "title": "Kolacja",
+          "title": "Kolacja - ognisko",
           "type": "meal",
           "groups": ["wszyscy"],
-          "duration": 60
+          "duration": 90
         },
         {
-          "start": "20:00",
+          "start": "21:00",
           "title": "Podział na Mecz Matematyczny i rozdanie zadań",
           "type": "other",
           "groups": ["wszyscy"],
@@ -297,11 +281,11 @@
           "approx": true
         },
         {
-          "start": "20:30",
+          "start": "21:30",
           "title": "Praca nad zadaniami z Meczu Matematycznego",
           "type": "other",
           "groups": ["wszyscy"],
-          "duration": 180,
+          "duration": 150,
           "approx": true,
           "notes": "Czas nieograniczony :3"
         }
@@ -323,7 +307,7 @@
           "type": "match",
           "groups": ["starsza"],
           "duration": 75,
-          "notes": "S2"
+          "notes": "Sala smok"
         },
         {
           "start": "11:00",
@@ -331,7 +315,7 @@
           "type": "match",
           "groups": ["młodsza"],
           "duration": 75,
-          "notes": "S1"
+          "notes": "Sala weselna"
         },
         {
           "start": "12:15",
@@ -339,7 +323,7 @@
           "type": "match",
           "groups": ["elita"],
           "duration": 135,
-          "notes": "S2"
+          "notes": "Sala smok"
         },
         {
           "start": "14:30",
@@ -353,7 +337,7 @@
           "title": "Wyjazd do Mielca",
           "type": "other",
           "groups": ["wszyscy"],
-          "duration": 75,
+          "duration": 60,
           "approx": true
         }
       ]
