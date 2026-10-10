@@ -49,6 +49,15 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
           { slug: "elita", fileName: "C3 Elita.pdf", name: "Elita" },
         ],
       },
+      {
+        name: "Mecz matematyczny",
+        path: "mecz",
+        files: [
+          { slug: "mlodsza", fileName: "mmm.pdf", name: "Mecz młodszej"},
+          { slug: "starsza", fileName: "mms.pdf", name: "Mecz starszej"},
+          { slug: "elita", fileName: "mme.pdf", name: "Mecz elity"},
+        ]
+      }
     ],
   }
 ];
