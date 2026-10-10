@@ -36,36 +36,21 @@ const TASK_COLLECTIONS: LibraryCollection[] = [
       },
     ],
   },
-  // {
-  //   id: "sobota",
-  //   title: "Sobota",
-  //   sections: [
-  //     {
-  //       name: "Zadania dzienne",
-  //       path: "kontesty",
-  //       files: [
-  //         { slug: "mlodsza", fileName: "C3 młodsza.pdf", name: "Grupa młodsza" },
-  //         { slug: "starsza", fileName: "C3 starsza.pdf", name: "Grupa starsza" },
-  //         { slug: "elita", fileName: "C3 Elita.pdf", name: "Elita" },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: "mecz-matematyczny",
-  //   title: "Mecz Matematyczny",
-  //   sections: [
-  //     {
-  //       name: "Zadania finałowe",
-  //       path: "final",
-  //       files: [
-  //         { slug: "mecz-mlodsza", fileName: "mecz-mlodsza.pdf", name: "Grupa młodsza"},
-  //         { slug: "mecz-starsza", fileName: "mecz-starsza.pdf", name: "Grupa starsza"},
-  //         { slug: "mecz-elita", fileName: "mecz-elita.pdf", name: "Elita"},
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    id: "sobota",
+    title: "Sobota",
+    sections: [
+      {
+        name: "Zadania dzienne",
+        path: "kontesty",
+        files: [
+          { slug: "mlodsza", fileName: "C3 młodsza.pdf", name: "Grupa młodsza" },
+          { slug: "starsza", fileName: "C3 starsza.pdf", name: "Grupa starsza" },
+          { slug: "elita", fileName: "C3 Elita.pdf", name: "Elita" },
+        ],
+      },
+    ],
+  }
 ];
 
 const TASK_FILES = buildLibraryEntries(TASK_COLLECTIONS);
