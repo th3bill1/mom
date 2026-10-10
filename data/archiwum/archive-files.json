@@ -413,6 +413,131 @@
           ]
         }
       ]
+    },
+    {
+      "id": "mom5",
+      "title": "MOM V",
+      "sections": [
+        {
+          "name": "Kontesty",
+          "path": "kontesty",
+          "files": [
+            {
+              "slug": "c1-elita",
+              "fileName": "C1 Elita.pdf",
+              "name": "K1 Elita.pdf"
+            },
+            {
+              "slug": "c1-mlodsza",
+              "fileName": "C1 młodsza.pdf",
+              "name": "K1 młodsza.pdf"
+            },
+            {
+              "slug": "c1-starsza",
+              "fileName": "C1 starsza.pdf",
+              "name": "K1 starsza.pdf"
+            },
+            {
+              "slug": "c2-elita",
+              "fileName": "C2 Elita.pdf",
+              "name": "K2 Elita.pdf"
+            },
+            {
+              "slug": "c2-mlodsza",
+              "fileName": "C2 młodsza.pdf",
+              "name": "K2 młodsza.pdf"
+            },
+            {
+              "slug": "c2-starsza",
+              "fileName": "C2 starsza.pdf",
+              "name": "K2 starsza.pdf"
+            },
+            {
+              "slug": "c3-elita",
+              "fileName": "C3 Elita.pdf",
+              "name": "K3 Elita.pdf"
+            },
+            {
+              "slug": "c3-mlodsza",
+              "fileName": "C3 młodsza.pdf",
+              "name": "K3 młodsza.pdf"
+            },
+            {
+              "slug": "c3-starsza",
+              "fileName": "C3 starsza.pdf",
+              "name": "K3 starsza.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Wykłady",
+          "path": "wyklady",
+          "files": [
+            {
+              "slug": "Ciągi",
+              "fileName": "(1E) Ciągi.pdf",
+              "name": "Ciągi.pdf"
+            },
+            {
+              "slug": "Przekształcenia algebraiczne",
+              "fileName": "(1M) Przekształcenia algebraiczne.pdf",
+              "name": "Przekształcenia algebraiczne.pdf"
+            },
+            {
+              "slug": "Niezmienniki",
+              "fileName": "(1S) Niezmienniki.pdf",
+              "name": "Niezmienniki.pdf"
+            },
+            {
+              "slug": "Wykładniki p-adyczne",
+              "fileName": "(2E) Wykładniki p-adyczne.pdf",
+              "name": "Wykładniki p-adyczne.pdf"
+            },
+            {
+              "slug": "(2M) Własności trójkąta.pdf",
+              "fileName": "(2M) Własności trójkąta.pdf",
+              "name": "Własności trójkąta.pdf"
+            },
+            {
+              "slug": "Potęga punktu",
+              "fileName": "(2S) Potęga punktu.pdf",
+              "name": "Potęga punktu.pdf"
+            },
+            {
+              "slug": "Środkowe i dwusieczne",
+              "fileName": "(3E) Środkowe i dwusieczne.pdf",
+              "name": "Środkowe i dwusieczne.pdf"
+            },
+            {
+              "slug": "Zasada szufladkowa",
+              "fileName": "(3M) Zasada szufladkowa.pdf",
+              "name": "Zasada szufladkowa.pdf"
+            },
+            {
+              "slug": "Liczby pierwsze",
+              "fileName": "(3S) Liczby pierwsze.pdf",
+              "name": "Liczby pierwsze.pdf"
+            }
+            
+          ]
+        },
+          {
+            "name": "Warsztaty",
+            "path": "warsztaty",
+            "files": [
+              {
+              "slug": "Lignwistyka matematyczna",
+              "fileName": "(1W) Lignwistyka matematyczna.pdf",
+              "name": "Lignwistyka matematyczna.pdf"
+            },
+            {
+              "slug": "Punkty izogonalnie sprzężone",
+              "fileName": "(2W) Punkty izogonalnie sprzężone.pdf",
+              "name": "Punkty izogonalnie sprzężone.pdf"
+            }
+            ]
+          }
+      ]
     }
   ]
 }

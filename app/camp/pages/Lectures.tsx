@@ -51,6 +51,21 @@ const LECTURE_COLLECTIONS: LibraryCollection[] = [
         ]
       }
     ],
+  },
+  {
+    id: "sobota",
+    title: "Sobota",
+    sections: [
+      {
+        name: "Wykłady",
+        path: "wyklady",
+        files: [
+          { slug: "(3M) Zasada szufladkowa.pdf", fileName: "(3M) Zasada szufladkowa.pdf", name: "Zasada szufladkowa"},
+          { slug: "(3S) Liczby pierwsze.pdf", fileName: "(3S) Liczby pierwsze.pdf", name: "Liczby pierwsze"},
+          { slug: "(3E) Środkowe i dwusieczne.pdf", fileName: "(3E) Środkowe i dwusieczne.pdf", name: "Środkowe i dwusieczne"},
+        ],
+      }
+    ],
   }
 ];
 
