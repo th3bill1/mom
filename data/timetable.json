@@ -304,11 +304,11 @@
           "duration": 45
         },
         {
-          "start": "9:45",
+          "start": "10:15",
           "title": "Mecz Matematyczny",
           "type": "match",
           "groups": ["starsza"],
-          "duration": 135,
+          "duration": 120,
           "notes": "Sala smok"
         },
         {
